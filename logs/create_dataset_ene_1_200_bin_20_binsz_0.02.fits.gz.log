@@ -1,0 +1,615 @@
+2023-10-06 19:48:21,051 - my-setup - DEBUG - Start session
+2023-10-06 19:48:21,086 - my-setup - DEBUG - Dataset energy: MapAxis
+
+	name       : energy    
+	unit       : 'TeV'     
+	nbins      : 20        
+	node type  : edges     
+	edges min  : 1.0e+00 TeV
+	edges max  : 2.0e+02 TeV
+	interp     : log       
+
+2023-10-06 19:48:21,086 - my-setup - DEBUG - Dataset geometry: WCS Keywords
+
+Number of WCS axes: 2
+CTYPE : 'GLON-CAR'  'GLAT-CAR'  
+CRVAL : 73.0  2.0  
+CRPIX : 550.5  250.5  
+PC1_1 PC1_2  : 1.0  0.0  
+PC2_1 PC2_2  : 0.0  1.0  
+CDELT : -0.02  0.02  
+NAXIS : 500  1100
+2023-10-06 19:48:21,086 - my-setup - DEBUG - MapDatasetMaker
+---------------
+
+  selection                      : {'edisp', 'counts', 'background', 'psf', 'exposure'}
+  background_interp_missing_data : True
+  background_pad_offset          : True
+
+2023-10-06 19:48:21,086 - my-setup - DEBUG - SafeMaskMaker
+-------------
+
+  methods      : {'aeff-default'}
+  aeff_percent : 10
+  bias_percent : 10
+  offset_max   : 3.0 deg
+
+2023-10-06 19:48:21,087 - my-setup - DEBUG - FoVBackgroundMaker
+------------------
+
+  method               : scale
+  min_counts           : 0
+  min_npred_background : 0
+  fit                  : <gammapy.modeling.fit.Fit object at 0x7fe60e1f9550>
+
+2023-10-06 19:48:21,354 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2023-10-06 19:48:21,354 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2023-10-06 19:48:21,354 - h5py._conv - DEBUG - Creating converter from 7 to 5
+2023-10-06 19:48:21,354 - h5py._conv - DEBUG - Creating converter from 5 to 7
+2023-10-06 19:48:39,669 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 0
+2023-10-06 19:48:39,684 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 0
+2023-10-06 19:48:40,052 - my-setup - DEBUG - Background norm obs 0: 1.03
+2023-10-06 19:48:57,315 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 1
+2023-10-06 19:48:57,323 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 1
+2023-10-06 19:48:57,557 - my-setup - DEBUG - Background norm obs 1: 1.02
+2023-10-06 19:49:09,040 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 2
+2023-10-06 19:49:09,064 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 2
+2023-10-06 19:49:09,364 - my-setup - DEBUG - Background norm obs 2: 1.00
+2023-10-06 19:49:24,001 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 3
+2023-10-06 19:49:24,009 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 3
+2023-10-06 19:49:24,190 - my-setup - DEBUG - Background norm obs 3: 1.00
+2023-10-06 19:49:40,467 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 4
+2023-10-06 19:49:40,474 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 4
+2023-10-06 19:49:40,741 - my-setup - DEBUG - Background norm obs 4: 1.02
+2023-10-06 19:50:00,897 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 5
+2023-10-06 19:50:00,908 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 5
+2023-10-06 19:50:01,285 - my-setup - DEBUG - Background norm obs 5: 0.99
+2023-10-06 19:50:22,180 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 6
+2023-10-06 19:50:22,194 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 6
+2023-10-06 19:50:22,618 - my-setup - DEBUG - Background norm obs 6: 1.01
+2023-10-06 19:50:41,251 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 7
+2023-10-06 19:50:41,259 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 7
+2023-10-06 19:50:41,530 - my-setup - DEBUG - Background norm obs 7: 1.02
+2023-10-06 19:50:56,826 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 8
+2023-10-06 19:50:56,835 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 8
+2023-10-06 19:50:57,102 - my-setup - DEBUG - Background norm obs 8: 1.03
+2023-10-06 19:51:12,655 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 9
+2023-10-06 19:51:12,662 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 9
+2023-10-06 19:51:12,911 - my-setup - DEBUG - Background norm obs 9: 1.04
+2023-10-06 19:51:27,027 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 10
+2023-10-06 19:51:27,035 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 10
+2023-10-06 19:51:27,299 - my-setup - DEBUG - Background norm obs 10: 1.05
+2023-10-06 19:51:42,936 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 11
+2023-10-06 19:51:42,945 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 11
+2023-10-06 19:51:43,259 - my-setup - DEBUG - Background norm obs 11: 1.02
+2023-10-06 19:52:00,082 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 12
+2023-10-06 19:52:00,100 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 12
+2023-10-06 19:52:00,465 - my-setup - DEBUG - Background norm obs 12: 1.03
+2023-10-06 19:52:16,458 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 13
+2023-10-06 19:52:16,466 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 13
+2023-10-06 19:52:16,688 - my-setup - DEBUG - Background norm obs 13: 1.04
+2023-10-06 19:52:32,730 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 14
+2023-10-06 19:52:32,739 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 14
+2023-10-06 19:52:32,984 - my-setup - DEBUG - Background norm obs 14: 1.04
+2023-10-06 19:52:43,854 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 15
+2023-10-06 19:52:43,862 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 15
+2023-10-06 19:52:44,045 - my-setup - DEBUG - Background norm obs 15: 1.06
+2023-10-06 19:52:57,303 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 16
+2023-10-06 19:52:57,317 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 16
+2023-10-06 19:52:57,553 - my-setup - DEBUG - Background norm obs 16: 1.04
+2023-10-06 19:53:11,716 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 17
+2023-10-06 19:53:11,731 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 17
+2023-10-06 19:53:11,984 - my-setup - DEBUG - Background norm obs 17: 1.05
+2023-10-06 19:53:25,352 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 18
+2023-10-06 19:53:25,361 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 18
+2023-10-06 19:53:25,574 - my-setup - DEBUG - Background norm obs 18: 1.04
+2023-10-06 19:53:38,495 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 19
+2023-10-06 19:53:38,503 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 19
+2023-10-06 19:53:38,705 - my-setup - DEBUG - Background norm obs 19: 1.05
+2023-10-06 19:53:52,079 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 20
+2023-10-06 19:53:52,089 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 20
+2023-10-06 19:53:52,298 - my-setup - DEBUG - Background norm obs 20: 1.04
+2023-10-06 19:54:08,880 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 21
+2023-10-06 19:54:08,890 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 21
+2023-10-06 19:54:09,128 - my-setup - DEBUG - Background norm obs 21: 1.03
+2023-10-06 19:54:25,616 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 22
+2023-10-06 19:54:25,624 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 22
+2023-10-06 19:54:25,849 - my-setup - DEBUG - Background norm obs 22: 1.03
+2023-10-06 19:54:40,568 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 23
+2023-10-06 19:54:40,576 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 23
+2023-10-06 19:54:40,816 - my-setup - DEBUG - Background norm obs 23: 1.04
+2023-10-06 19:55:02,847 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 24
+2023-10-06 19:55:02,857 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 24
+2023-10-06 19:55:03,101 - my-setup - DEBUG - Background norm obs 24: 1.03
+2023-10-06 19:55:28,292 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 25
+2023-10-06 19:55:28,301 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 25
+2023-10-06 19:55:28,559 - my-setup - DEBUG - Background norm obs 25: 1.05
+2023-10-06 19:55:52,964 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 26
+2023-10-06 19:55:52,972 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 26
+2023-10-06 19:55:53,296 - my-setup - DEBUG - Background norm obs 26: 1.03
+2023-10-06 19:56:05,235 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 27
+2023-10-06 19:56:05,244 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 27
+2023-10-06 19:56:05,436 - my-setup - DEBUG - Background norm obs 27: 1.04
+2023-10-06 19:56:17,822 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 28
+2023-10-06 19:56:17,832 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 28
+2023-10-06 19:56:18,088 - my-setup - DEBUG - Background norm obs 28: 1.06
+2023-10-06 19:56:34,460 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 29
+2023-10-06 19:56:34,471 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 29
+2023-10-06 19:56:34,731 - my-setup - DEBUG - Background norm obs 29: 1.04
+2023-10-06 19:56:57,640 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 30
+2023-10-06 19:56:57,652 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 30
+2023-10-06 19:56:57,919 - my-setup - DEBUG - Background norm obs 30: 1.03
+2023-10-06 19:57:30,237 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 31
+2023-10-06 19:57:30,252 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 31
+2023-10-06 19:57:30,585 - my-setup - DEBUG - Background norm obs 31: 1.04
+2023-10-06 19:57:48,730 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 32
+2023-10-06 19:57:48,741 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 32
+2023-10-06 19:57:49,049 - my-setup - DEBUG - Background norm obs 32: 1.04
+2023-10-06 19:58:06,484 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 33
+2023-10-06 19:58:06,494 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 33
+2023-10-06 19:58:06,778 - my-setup - DEBUG - Background norm obs 33: 1.03
+2023-10-06 19:58:24,140 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 34
+2023-10-06 19:58:24,151 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 34
+2023-10-06 19:58:24,438 - my-setup - DEBUG - Background norm obs 34: 1.04
+2023-10-06 19:58:43,686 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 35
+2023-10-06 19:58:43,701 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 35
+2023-10-06 19:58:44,029 - my-setup - DEBUG - Background norm obs 35: 1.03
+2023-10-06 19:59:03,316 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 36
+2023-10-06 19:59:03,326 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 36
+2023-10-06 19:59:03,649 - my-setup - DEBUG - Background norm obs 36: 1.03
+2023-10-06 19:59:17,445 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 37
+2023-10-06 19:59:17,456 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 37
+2023-10-06 19:59:17,706 - my-setup - DEBUG - Background norm obs 37: 1.03
+2023-10-06 19:59:31,475 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 38
+2023-10-06 19:59:31,484 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 38
+2023-10-06 19:59:31,723 - my-setup - DEBUG - Background norm obs 38: 1.04
+2023-10-06 19:59:47,074 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 39
+2023-10-06 19:59:47,083 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 39
+2023-10-06 19:59:47,345 - my-setup - DEBUG - Background norm obs 39: 1.04
+2023-10-06 20:00:02,865 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 40
+2023-10-06 20:00:02,876 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 40
+2023-10-06 20:00:03,145 - my-setup - DEBUG - Background norm obs 40: 1.03
+2023-10-06 20:00:20,804 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 41
+2023-10-06 20:00:20,814 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 41
+2023-10-06 20:00:21,107 - my-setup - DEBUG - Background norm obs 41: 1.04
+2023-10-06 20:00:37,799 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 42
+2023-10-06 20:00:37,808 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 42
+2023-10-06 20:00:38,026 - my-setup - DEBUG - Background norm obs 42: 1.04
+2023-10-06 20:00:51,797 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 43
+2023-10-06 20:00:51,805 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 43
+2023-10-06 20:00:52,032 - my-setup - DEBUG - Background norm obs 43: 1.03
+2023-10-06 20:01:05,420 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 44
+2023-10-06 20:01:05,432 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 44
+2023-10-06 20:01:05,646 - my-setup - DEBUG - Background norm obs 44: 1.04
+2023-10-06 20:01:20,394 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 45
+2023-10-06 20:01:20,403 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 45
+2023-10-06 20:01:20,641 - my-setup - DEBUG - Background norm obs 45: 1.02
+2023-10-06 20:01:35,707 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 46
+2023-10-06 20:01:35,717 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 46
+2023-10-06 20:01:35,973 - my-setup - DEBUG - Background norm obs 46: 1.05
+2023-10-06 20:01:47,021 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 47
+2023-10-06 20:01:47,033 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 47
+2023-10-06 20:01:47,210 - my-setup - DEBUG - Background norm obs 47: 1.05
+2023-10-06 20:01:58,393 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 48
+2023-10-06 20:01:58,403 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 48
+2023-10-06 20:01:58,601 - my-setup - DEBUG - Background norm obs 48: 1.03
+2023-10-06 20:02:10,969 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 49
+2023-10-06 20:02:10,978 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 49
+2023-10-06 20:02:11,172 - my-setup - DEBUG - Background norm obs 49: 1.04
+2023-10-06 20:02:24,925 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 50
+2023-10-06 20:02:24,936 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 50
+2023-10-06 20:02:25,199 - my-setup - DEBUG - Background norm obs 50: 1.03
+2023-10-06 20:02:42,950 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 51
+2023-10-06 20:02:42,959 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 51
+2023-10-06 20:02:43,270 - my-setup - DEBUG - Background norm obs 51: 1.03
+2023-10-06 20:03:01,299 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 52
+2023-10-06 20:03:01,309 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 52
+2023-10-06 20:03:01,633 - my-setup - DEBUG - Background norm obs 52: 1.04
+2023-10-06 20:03:19,583 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 53
+2023-10-06 20:03:19,595 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 53
+2023-10-06 20:03:19,896 - my-setup - DEBUG - Background norm obs 53: 1.04
+2023-10-06 20:03:37,747 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 54
+2023-10-06 20:03:37,758 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 54
+2023-10-06 20:03:38,070 - my-setup - DEBUG - Background norm obs 54: 1.05
+2023-10-06 20:03:56,034 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 55
+2023-10-06 20:03:56,044 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 55
+2023-10-06 20:03:56,351 - my-setup - DEBUG - Background norm obs 55: 1.04
+2023-10-06 20:04:14,243 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 56
+2023-10-06 20:04:14,253 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 56
+2023-10-06 20:04:14,556 - my-setup - DEBUG - Background norm obs 56: 1.03
+2023-10-06 20:04:28,754 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 57
+2023-10-06 20:04:28,768 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 57
+2023-10-06 20:04:29,014 - my-setup - DEBUG - Background norm obs 57: 1.00
+2023-10-06 20:04:46,725 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 58
+2023-10-06 20:04:46,736 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 58
+2023-10-06 20:04:47,031 - my-setup - DEBUG - Background norm obs 58: 1.03
+2023-10-06 20:05:01,149 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 59
+2023-10-06 20:05:01,159 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 59
+2023-10-06 20:05:01,391 - my-setup - DEBUG - Background norm obs 59: 1.00
+2023-10-06 20:05:18,606 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 60
+2023-10-06 20:05:18,615 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 60
+2023-10-06 20:05:18,888 - my-setup - DEBUG - Background norm obs 60: 1.03
+2023-10-06 20:05:32,358 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 61
+2023-10-06 20:05:32,375 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 61
+2023-10-06 20:05:32,659 - my-setup - DEBUG - Background norm obs 61: 1.02
+2023-10-06 20:05:56,245 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 62
+2023-10-06 20:05:56,261 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 62
+2023-10-06 20:05:56,671 - my-setup - DEBUG - Background norm obs 62: 1.03
+2023-10-06 20:06:16,061 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 63
+2023-10-06 20:06:16,074 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 63
+2023-10-06 20:06:16,395 - my-setup - DEBUG - Background norm obs 63: 1.02
+2023-10-06 20:06:30,360 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 64
+2023-10-06 20:06:30,368 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 64
+2023-10-06 20:06:30,587 - my-setup - DEBUG - Background norm obs 64: 1.04
+2023-10-06 20:06:46,662 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 65
+2023-10-06 20:06:46,670 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 65
+2023-10-06 20:06:46,882 - my-setup - DEBUG - Background norm obs 65: 1.04
+2023-10-06 20:07:03,719 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 66
+2023-10-06 20:07:03,727 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 66
+2023-10-06 20:07:03,964 - my-setup - DEBUG - Background norm obs 66: 1.00
+2023-10-06 20:07:17,489 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 67
+2023-10-06 20:07:17,497 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 67
+2023-10-06 20:07:17,709 - my-setup - DEBUG - Background norm obs 67: 1.03
+2023-10-06 20:07:34,348 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 68
+2023-10-06 20:07:34,357 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 68
+2023-10-06 20:07:34,662 - my-setup - DEBUG - Background norm obs 68: 1.04
+2023-10-06 20:07:54,124 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 69
+2023-10-06 20:07:54,134 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 69
+2023-10-06 20:07:54,452 - my-setup - DEBUG - Background norm obs 69: 1.02
+2023-10-06 20:08:11,976 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 70
+2023-10-06 20:08:11,985 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 70
+2023-10-06 20:08:12,279 - my-setup - DEBUG - Background norm obs 70: 1.05
+2023-10-06 20:08:30,211 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 71
+2023-10-06 20:08:30,222 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 71
+2023-10-06 20:08:30,530 - my-setup - DEBUG - Background norm obs 71: 1.02
+2023-10-06 20:08:50,016 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 72
+2023-10-06 20:08:50,026 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 72
+2023-10-06 20:08:50,345 - my-setup - DEBUG - Background norm obs 72: 1.01
+2023-10-06 20:09:07,857 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 73
+2023-10-06 20:09:07,868 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 73
+2023-10-06 20:09:08,157 - my-setup - DEBUG - Background norm obs 73: 1.02
+2023-10-06 20:09:25,633 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 74
+2023-10-06 20:09:25,642 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 74
+2023-10-06 20:09:25,924 - my-setup - DEBUG - Background norm obs 74: 1.04
+2023-10-06 20:09:45,157 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 75
+2023-10-06 20:09:45,167 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 75
+2023-10-06 20:09:45,478 - my-setup - DEBUG - Background norm obs 75: 1.00
+2023-10-06 20:10:02,929 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 76
+2023-10-06 20:10:02,938 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 76
+2023-10-06 20:10:03,237 - my-setup - DEBUG - Background norm obs 76: 1.03
+2023-10-06 20:10:20,618 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 77
+2023-10-06 20:10:20,629 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 77
+2023-10-06 20:10:20,934 - my-setup - DEBUG - Background norm obs 77: 1.04
+2023-10-06 20:10:38,344 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 78
+2023-10-06 20:10:38,354 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 78
+2023-10-06 20:10:38,653 - my-setup - DEBUG - Background norm obs 78: 1.02
+2023-10-06 20:10:56,018 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 79
+2023-10-06 20:10:56,029 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 79
+2023-10-06 20:10:56,326 - my-setup - DEBUG - Background norm obs 79: 1.04
+2023-10-06 20:11:13,894 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 80
+2023-10-06 20:11:13,904 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 80
+2023-10-06 20:11:14,197 - my-setup - DEBUG - Background norm obs 80: 1.04
+2023-10-06 20:11:31,450 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 81
+2023-10-06 20:11:31,460 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 81
+2023-10-06 20:11:31,747 - my-setup - DEBUG - Background norm obs 81: 1.03
+2023-10-06 20:11:49,058 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 82
+2023-10-06 20:11:49,068 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 82
+2023-10-06 20:11:49,353 - my-setup - DEBUG - Background norm obs 82: 1.04
+2023-10-06 20:12:06,832 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 83
+2023-10-06 20:12:06,841 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 83
+2023-10-06 20:12:07,122 - my-setup - DEBUG - Background norm obs 83: 1.03
+2023-10-06 20:12:26,379 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 84
+2023-10-06 20:12:26,390 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 84
+2023-10-06 20:12:26,711 - my-setup - DEBUG - Background norm obs 84: 1.02
+2023-10-06 20:12:45,879 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 85
+2023-10-06 20:12:45,889 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 85
+2023-10-06 20:12:46,200 - my-setup - DEBUG - Background norm obs 85: 1.03
+2023-10-06 20:13:05,543 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 86
+2023-10-06 20:13:05,554 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 86
+2023-10-06 20:13:05,868 - my-setup - DEBUG - Background norm obs 86: 1.05
+2023-10-06 20:13:25,157 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 87
+2023-10-06 20:13:25,168 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 87
+2023-10-06 20:13:25,479 - my-setup - DEBUG - Background norm obs 87: 1.04
+2023-10-06 20:13:44,899 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 88
+2023-10-06 20:13:44,910 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 88
+2023-10-06 20:13:45,243 - my-setup - DEBUG - Background norm obs 88: 1.03
+2023-10-06 20:14:04,977 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 89
+2023-10-06 20:14:04,987 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 89
+2023-10-06 20:14:05,314 - my-setup - DEBUG - Background norm obs 89: 1.04
+2023-10-06 20:14:26,078 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 90
+2023-10-06 20:14:26,089 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 90
+2023-10-06 20:14:26,426 - my-setup - DEBUG - Background norm obs 90: 1.03
+2023-10-06 20:14:46,516 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 91
+2023-10-06 20:14:46,532 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 91
+2023-10-06 20:14:46,854 - my-setup - DEBUG - Background norm obs 91: 1.04
+2023-10-06 20:15:09,853 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 92
+2023-10-06 20:15:09,864 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 92
+2023-10-06 20:15:10,199 - my-setup - DEBUG - Background norm obs 92: 1.03
+2023-10-06 20:15:33,120 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 93
+2023-10-06 20:15:33,130 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 93
+2023-10-06 20:15:33,471 - my-setup - DEBUG - Background norm obs 93: 1.03
+2023-10-06 20:16:00,058 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 94
+2023-10-06 20:16:00,071 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 94
+2023-10-06 20:16:00,413 - my-setup - DEBUG - Background norm obs 94: 1.03
+2023-10-06 20:16:30,359 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 95
+2023-10-06 20:16:30,371 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 95
+2023-10-06 20:16:30,693 - my-setup - DEBUG - Background norm obs 95: 1.02
+2023-10-06 20:16:45,441 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 96
+2023-10-06 20:16:45,453 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 96
+2023-10-06 20:16:45,702 - my-setup - DEBUG - Background norm obs 96: 1.06
+2023-10-06 20:17:00,226 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 97
+2023-10-06 20:17:00,240 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 97
+2023-10-06 20:17:00,496 - my-setup - DEBUG - Background norm obs 97: 1.04
+2023-10-06 20:17:15,107 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 98
+2023-10-06 20:17:15,118 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 98
+2023-10-06 20:17:15,363 - my-setup - DEBUG - Background norm obs 98: 1.05
+2023-10-06 20:17:29,854 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 99
+2023-10-06 20:17:29,865 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 99
+2023-10-06 20:17:30,128 - my-setup - DEBUG - Background norm obs 99: 1.05
+2023-10-06 20:17:44,475 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 100
+2023-10-06 20:17:44,488 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 100
+2023-10-06 20:17:44,737 - my-setup - DEBUG - Background norm obs 100: 1.04
+2023-10-06 20:17:59,254 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 101
+2023-10-06 20:17:59,264 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 101
+2023-10-06 20:17:59,492 - my-setup - DEBUG - Background norm obs 101: 1.04
+2023-10-06 20:18:13,773 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 102
+2023-10-06 20:18:13,785 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 102
+2023-10-06 20:18:14,018 - my-setup - DEBUG - Background norm obs 102: 1.04
+2023-10-06 20:18:28,342 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 103
+2023-10-06 20:18:28,353 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 103
+2023-10-06 20:18:28,623 - my-setup - DEBUG - Background norm obs 103: 1.05
+2023-10-06 20:18:43,005 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 104
+2023-10-06 20:18:43,017 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 104
+2023-10-06 20:18:43,257 - my-setup - DEBUG - Background norm obs 104: 1.04
+2023-10-06 20:18:57,721 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 105
+2023-10-06 20:18:57,732 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 105
+2023-10-06 20:18:57,960 - my-setup - DEBUG - Background norm obs 105: 1.05
+2023-10-06 20:19:12,249 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 106
+2023-10-06 20:19:12,259 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 106
+2023-10-06 20:19:12,508 - my-setup - DEBUG - Background norm obs 106: 1.03
+2023-10-06 20:19:26,803 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 107
+2023-10-06 20:19:26,813 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 107
+2023-10-06 20:19:27,051 - my-setup - DEBUG - Background norm obs 107: 1.04
+2023-10-06 20:19:50,876 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 108
+2023-10-06 20:19:50,888 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 108
+2023-10-06 20:19:51,216 - my-setup - DEBUG - Background norm obs 108: 1.05
+2023-10-06 20:20:15,820 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 109
+2023-10-06 20:20:15,828 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 109
+2023-10-06 20:20:16,028 - my-setup - DEBUG - Background norm obs 109: 1.05
+2023-10-06 20:20:37,447 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 110
+2023-10-06 20:20:37,460 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 110
+2023-10-06 20:20:37,656 - my-setup - DEBUG - Background norm obs 110: 1.03
+2023-10-06 20:20:59,189 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 111
+2023-10-06 20:20:59,198 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 111
+2023-10-06 20:20:59,391 - my-setup - DEBUG - Background norm obs 111: 1.04
+2023-10-06 20:21:18,517 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 112
+2023-10-06 20:21:18,525 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 112
+2023-10-06 20:21:18,735 - my-setup - DEBUG - Background norm obs 112: 1.02
+2023-10-06 20:21:44,402 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 113
+2023-10-06 20:21:44,410 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 113
+2023-10-06 20:21:44,601 - my-setup - DEBUG - Background norm obs 113: 1.01
+2023-10-06 20:22:08,866 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 114
+2023-10-06 20:22:08,887 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 114
+2023-10-06 20:22:09,072 - my-setup - DEBUG - Background norm obs 114: 1.04
+2023-10-06 20:22:25,937 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 115
+2023-10-06 20:22:25,945 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 115
+2023-10-06 20:22:26,135 - my-setup - DEBUG - Background norm obs 115: 1.04
+2023-10-06 20:22:45,853 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 116
+2023-10-06 20:22:45,861 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 116
+2023-10-06 20:22:46,049 - my-setup - DEBUG - Background norm obs 116: 1.04
+2023-10-06 20:23:06,382 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 117
+2023-10-06 20:23:06,390 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 117
+2023-10-06 20:23:06,579 - my-setup - DEBUG - Background norm obs 117: 1.04
+2023-10-06 20:23:25,058 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 118
+2023-10-06 20:23:25,066 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 118
+2023-10-06 20:23:25,269 - my-setup - DEBUG - Background norm obs 118: 1.03
+2023-10-06 20:23:46,208 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 119
+2023-10-06 20:23:46,222 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 119
+2023-10-06 20:23:46,415 - my-setup - DEBUG - Background norm obs 119: 1.04
+2023-10-06 20:24:20,459 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 120
+2023-10-06 20:24:20,467 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 120
+2023-10-06 20:24:20,691 - my-setup - DEBUG - Background norm obs 120: 1.00
+2023-10-06 20:24:34,323 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 121
+2023-10-06 20:24:34,331 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 121
+2023-10-06 20:24:34,538 - my-setup - DEBUG - Background norm obs 121: 1.00
+2023-10-06 20:24:47,278 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 122
+2023-10-06 20:24:47,287 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 122
+2023-10-06 20:24:47,499 - my-setup - DEBUG - Background norm obs 122: 1.03
+2023-10-06 20:25:00,230 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 123
+2023-10-06 20:25:00,238 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 123
+2023-10-06 20:25:00,441 - my-setup - DEBUG - Background norm obs 123: 1.02
+2023-10-06 20:25:13,182 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 124
+2023-10-06 20:25:13,190 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 124
+2023-10-06 20:25:13,402 - my-setup - DEBUG - Background norm obs 124: 1.02
+2023-10-06 20:25:27,414 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 125
+2023-10-06 20:25:27,422 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 125
+2023-10-06 20:25:27,657 - my-setup - DEBUG - Background norm obs 125: 1.02
+2023-10-06 20:25:41,707 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 126
+2023-10-06 20:25:41,715 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 126
+2023-10-06 20:25:41,945 - my-setup - DEBUG - Background norm obs 126: 1.01
+2023-10-06 20:25:54,913 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 127
+2023-10-06 20:25:54,922 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 127
+2023-10-06 20:25:55,130 - my-setup - DEBUG - Background norm obs 127: 1.01
+2023-10-06 20:26:07,942 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 128
+2023-10-06 20:26:07,950 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 128
+2023-10-06 20:26:08,153 - my-setup - DEBUG - Background norm obs 128: 1.02
+2023-10-06 20:26:22,115 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 129
+2023-10-06 20:26:22,123 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 129
+2023-10-06 20:26:22,350 - my-setup - DEBUG - Background norm obs 129: 1.01
+2023-10-06 20:26:36,393 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 130
+2023-10-06 20:26:36,401 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 130
+2023-10-06 20:26:36,634 - my-setup - DEBUG - Background norm obs 130: 1.01
+2023-10-06 20:26:49,271 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 131
+2023-10-06 20:26:49,279 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 131
+2023-10-06 20:26:49,494 - my-setup - DEBUG - Background norm obs 131: 1.01
+2023-10-06 20:27:03,549 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 132
+2023-10-06 20:27:03,557 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 132
+2023-10-06 20:27:03,786 - my-setup - DEBUG - Background norm obs 132: 1.01
+2023-10-06 20:27:16,421 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 133
+2023-10-06 20:27:16,429 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 133
+2023-10-06 20:27:16,637 - my-setup - DEBUG - Background norm obs 133: 1.01
+2023-10-06 20:27:30,696 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 134
+2023-10-06 20:27:30,704 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 134
+2023-10-06 20:27:30,932 - my-setup - DEBUG - Background norm obs 134: 1.02
+2023-10-06 20:27:45,039 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 135
+2023-10-06 20:27:45,047 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 135
+2023-10-06 20:27:45,283 - my-setup - DEBUG - Background norm obs 135: 1.01
+2023-10-06 20:27:59,342 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 136
+2023-10-06 20:27:59,350 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 136
+2023-10-06 20:27:59,588 - my-setup - DEBUG - Background norm obs 136: 1.01
+2023-10-06 20:28:13,655 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 137
+2023-10-06 20:28:13,664 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 137
+2023-10-06 20:28:13,898 - my-setup - DEBUG - Background norm obs 137: 1.02
+2023-10-06 20:28:27,951 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 138
+2023-10-06 20:28:27,959 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 138
+2023-10-06 20:28:28,188 - my-setup - DEBUG - Background norm obs 138: 1.01
+2023-10-06 20:28:42,579 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 139
+2023-10-06 20:28:42,587 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 139
+2023-10-06 20:28:42,820 - my-setup - DEBUG - Background norm obs 139: 1.01
+2023-10-06 20:28:55,582 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 140
+2023-10-06 20:28:55,591 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 140
+2023-10-06 20:28:55,800 - my-setup - DEBUG - Background norm obs 140: 1.02
+2023-10-06 20:29:08,575 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 141
+2023-10-06 20:29:08,583 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 141
+2023-10-06 20:29:08,789 - my-setup - DEBUG - Background norm obs 141: 1.01
+2023-10-06 20:29:21,697 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 142
+2023-10-06 20:29:21,705 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 142
+2023-10-06 20:29:21,914 - my-setup - DEBUG - Background norm obs 142: 1.01
+2023-10-06 20:29:34,801 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 143
+2023-10-06 20:29:34,810 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 143
+2023-10-06 20:29:35,018 - my-setup - DEBUG - Background norm obs 143: 1.01
+2023-10-06 20:29:47,876 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 144
+2023-10-06 20:29:47,884 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 144
+2023-10-06 20:29:48,091 - my-setup - DEBUG - Background norm obs 144: 1.00
+2023-10-06 20:30:02,449 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 145
+2023-10-06 20:30:02,457 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 145
+2023-10-06 20:30:02,684 - my-setup - DEBUG - Background norm obs 145: 1.02
+2023-10-06 20:30:21,164 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 146
+2023-10-06 20:30:21,172 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 146
+2023-10-06 20:30:21,399 - my-setup - DEBUG - Background norm obs 146: 1.00
+2023-10-06 20:30:38,877 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 147
+2023-10-06 20:30:38,885 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 147
+2023-10-06 20:30:39,117 - my-setup - DEBUG - Background norm obs 147: 1.00
+2023-10-06 20:30:55,877 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 148
+2023-10-06 20:30:55,885 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 148
+2023-10-06 20:30:56,126 - my-setup - DEBUG - Background norm obs 148: 1.01
+2023-10-06 20:31:18,384 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 149
+2023-10-06 20:31:18,392 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 149
+2023-10-06 20:31:18,627 - my-setup - DEBUG - Background norm obs 149: 1.01
+2023-10-06 20:31:31,800 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 150
+2023-10-06 20:31:31,809 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 150
+2023-10-06 20:31:32,031 - my-setup - DEBUG - Background norm obs 150: 1.03
+2023-10-06 20:31:45,336 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 151
+2023-10-06 20:31:45,344 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 151
+2023-10-06 20:31:45,568 - my-setup - DEBUG - Background norm obs 151: 1.01
+2023-10-06 20:32:02,462 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 152
+2023-10-06 20:32:02,470 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 152
+2023-10-06 20:32:02,680 - my-setup - DEBUG - Background norm obs 152: 1.02
+2023-10-06 20:32:18,045 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 153
+2023-10-06 20:32:18,058 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 153
+2023-10-06 20:32:18,286 - my-setup - DEBUG - Background norm obs 153: 1.01
+2023-10-06 20:32:36,605 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 154
+2023-10-06 20:32:36,613 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 154
+2023-10-06 20:32:36,834 - my-setup - DEBUG - Background norm obs 154: 1.03
+2023-10-06 20:33:06,707 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 155
+2023-10-06 20:33:06,715 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 155
+2023-10-06 20:33:06,961 - my-setup - DEBUG - Background norm obs 155: 1.02
+2023-10-06 20:33:35,794 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 156
+2023-10-06 20:33:35,802 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 156
+2023-10-06 20:33:36,049 - my-setup - DEBUG - Background norm obs 156: 1.02
+2023-10-06 20:34:05,615 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 157
+2023-10-06 20:34:05,631 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 157
+2023-10-06 20:34:06,119 - my-setup - DEBUG - Background norm obs 157: 1.01
+2023-10-06 20:34:37,197 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 158
+2023-10-06 20:34:37,205 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 158
+2023-10-06 20:34:37,453 - my-setup - DEBUG - Background norm obs 158: 1.00
+2023-10-06 20:35:06,335 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 159
+2023-10-06 20:35:06,356 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 159
+2023-10-06 20:35:06,601 - my-setup - DEBUG - Background norm obs 159: 0.99
+2023-10-06 20:35:26,830 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 160
+2023-10-06 20:35:26,837 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 160
+2023-10-06 20:35:27,052 - my-setup - DEBUG - Background norm obs 160: 1.01
+2023-10-06 20:35:39,285 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 161
+2023-10-06 20:35:39,293 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 161
+2023-10-06 20:35:39,490 - my-setup - DEBUG - Background norm obs 161: 1.02
+2023-10-06 20:35:51,696 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 162
+2023-10-06 20:35:51,704 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 162
+2023-10-06 20:35:51,910 - my-setup - DEBUG - Background norm obs 162: 1.00
+2023-10-06 20:36:04,634 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 163
+2023-10-06 20:36:04,645 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 163
+2023-10-06 20:36:04,853 - my-setup - DEBUG - Background norm obs 163: 1.01
+2023-10-06 20:36:18,003 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 164
+2023-10-06 20:36:18,014 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 164
+2023-10-06 20:36:18,225 - my-setup - DEBUG - Background norm obs 164: 1.01
+2023-10-06 20:36:28,661 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 165
+2023-10-06 20:36:28,676 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 165
+2023-10-06 20:36:28,844 - my-setup - DEBUG - Background norm obs 165: 1.02
+2023-10-06 20:36:41,591 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 166
+2023-10-06 20:36:41,599 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 166
+2023-10-06 20:36:41,804 - my-setup - DEBUG - Background norm obs 166: 1.01
+2023-10-06 20:36:51,037 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 167
+2023-10-06 20:36:51,046 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 167
+2023-10-06 20:36:51,199 - my-setup - DEBUG - Background norm obs 167: 1.00
+2023-10-06 20:37:03,686 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 168
+2023-10-06 20:37:03,697 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 168
+2023-10-06 20:37:03,902 - my-setup - DEBUG - Background norm obs 168: 1.02
+2023-10-06 20:37:13,325 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 169
+2023-10-06 20:37:13,333 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 169
+2023-10-06 20:37:13,485 - my-setup - DEBUG - Background norm obs 169: 1.02
+2023-10-06 20:37:25,847 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 170
+2023-10-06 20:37:25,856 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 170
+2023-10-06 20:37:26,055 - my-setup - DEBUG - Background norm obs 170: 1.01
+2023-10-06 20:37:35,381 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 171
+2023-10-06 20:37:35,389 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 171
+2023-10-06 20:37:35,539 - my-setup - DEBUG - Background norm obs 171: 1.01
+2023-10-06 20:37:44,845 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 172
+2023-10-06 20:37:44,855 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 172
+2023-10-06 20:37:45,006 - my-setup - DEBUG - Background norm obs 172: 1.02
+2023-10-06 20:37:57,526 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 173
+2023-10-06 20:37:57,535 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 173
+2023-10-06 20:37:57,734 - my-setup - DEBUG - Background norm obs 173: 1.01
+2023-10-06 20:38:10,447 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 174
+2023-10-06 20:38:10,456 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 174
+2023-10-06 20:38:10,658 - my-setup - DEBUG - Background norm obs 174: 1.00
+2023-10-06 20:38:26,423 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 175
+2023-10-06 20:38:26,433 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 175
+2023-10-06 20:38:26,658 - my-setup - DEBUG - Background norm obs 175: 1.01
+2023-10-06 20:38:42,167 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 176
+2023-10-06 20:38:42,176 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 176
+2023-10-06 20:38:42,406 - my-setup - DEBUG - Background norm obs 176: 1.01
+2023-10-06 20:38:57,799 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 177
+2023-10-06 20:38:57,809 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 177
+2023-10-06 20:38:58,035 - my-setup - DEBUG - Background norm obs 177: 1.00
+2023-10-06 20:39:13,507 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 178
+2023-10-06 20:39:13,517 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 178
+2023-10-06 20:39:13,739 - my-setup - DEBUG - Background norm obs 178: 1.01
+2023-10-06 20:39:29,867 - gammapy.makers.safe - WARNING - No default upper safe energy threshold defined for obs 179
+2023-10-06 20:39:29,905 - gammapy.makers.safe - WARNING - No default lower safe energy threshold defined for obs 179
+2023-10-06 20:39:30,273 - my-setup - DEBUG - Background norm obs 179: 1.00
+2023-10-06 20:39:30,565 - my-setup - INFO - MapDataset
+----------
+
+  Name                            : dc_cygnus-stacked 
+
+  Total counts                    : 2951947 
+  Total background counts         : 2951947.75
+  Total excess counts             : -0.75
+
+  Predicted counts                : 2951947.00
+  Predicted background counts     : 2951947.75
+  Predicted excess counts         : nan
+
+  Exposure min                    : 7.14e+08 m2 s
+  Exposure max                    : 1.31e+12 m2 s
+
+  Number of total bins            : 11000000 
+  Number of fit bins              : 11000000 
+
+  Fit statistic type              : cash
+  Fit statistic value (-2 log(L)) : nan
+
+  Number of models                : 0 
+  Number of parameters            : 0
+  Number of free parameters       : 0
+
+
