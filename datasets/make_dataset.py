@@ -10,7 +10,7 @@ from astropy.coordinates import SkyCoord
 from GPyUtils.logging_config import logging_conf
 from modules.variables import *
 
-# Name of the output directory where results will be saved
+# Name of the output directory where events are
 events_dir = dc_folder / "sim_events"
 
 # Read all the new selected event files into the "new_events" folder:
