@@ -24,6 +24,8 @@ data_store = DataStore.from_events_files(events_paths=paths, irfs_paths=astri_ir
 print(data_store)
 
 # Save the DataStore information to disk
+path_to_datastore = path_to_datastores / 'all_IDs'
+(path_to_datastore).mkdir(parents=True, exist_ok=True)
 data_store.hdu_table.write(path_to_datastore / "hdu-index_complete.fits.gz", overwrite=True)
 data_store.obs_table.write(path_to_datastore / "obs-index_complete.fits.gz", overwrite=True)
 
