@@ -23,8 +23,8 @@ paths.sort()
 #Here I create a new folder to store the selected events, and select all the events with MC_ID 10001 or 10018
 # 10001 --> diffuse, 10018 --> fermi_bubble
 # uncomment only one:
-IDs, file_name = [10017, 10018], 'fermi'
-#IDs, file_name = [10000, 10001], 'diffuse'
+#IDs, file_name = [10017, 10018], 'fermi'
+IDs, file_name = [10001, 10002], 'diffuse'
 
 # Set up log configuration and create a logger
 logger = logging_conf(path_to_logs, f"create_{file_name}_datastore.log")
