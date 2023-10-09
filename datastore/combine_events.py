@@ -41,10 +41,11 @@ data_store = DataStore.from_events_files(events_paths=new_paths,
                                          irfs_paths=astri_irf)
 print(data_store)
 # Let's save them on disk:
-data_store.hdu_table.write(path_to_datastores / "selected_diffuse+fermi_hdu-index.fits.gz", overwrite=True)
-data_store.obs_table.write(path_to_datastores / "selected_diffuse+fermi_obs-index.fits.gz", overwrite=True)
+path_to_datastore = path_to_datastores / "diffuse+fermi"
+data_store.hdu_table.write(path_to_datastore / "selected_diffuse+fermi_hdu-index.fits.gz", overwrite=True)
+data_store.obs_table.write(path_to_datastore / "selected_diffuse+fermi_obs-index.fits.gz", overwrite=True)
 # Let's read the DataStore
-data_store = DataStore.from_dir(path_to_datastores, 
+data_store = DataStore.from_dir(path_to_datastore, 
                                 "selected_diffuse+fermi_hdu-index.fits.gz", 
                                 "selected_diffuse+fermi_obs-index.fits.gz")
 data_store.info()
