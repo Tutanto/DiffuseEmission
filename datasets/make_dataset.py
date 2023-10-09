@@ -24,7 +24,8 @@ data_store = DataStore.from_events_files(events_paths=paths, irfs_paths=astri_ir
 print(data_store)
 
 # Save the DataStore information to disk
-path_to_datastore = path_to_datastores / 'all_IDs'
+file_name = 'all_IDs'
+path_to_datastore = path_to_datastores / file_name
 (path_to_datastore).mkdir(parents=True, exist_ok=True)
 data_store.hdu_table.write(path_to_datastore / "hdu-index_complete.fits.gz", overwrite=True)
 data_store.obs_table.write(path_to_datastore / "obs-index_complete.fits.gz", overwrite=True)
@@ -47,7 +48,7 @@ e_min = 1
 e_max = 200
 bin = 20
 binsz = 0.02
-dataset_name = f"dataset_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}.fits.gz"
+dataset_name = f"dataset_{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}.fits.gz"
 
 # Set up log configuration and create a logger
 logger = logging_conf(path_to_logs, f"create_{dataset_name}.log")
