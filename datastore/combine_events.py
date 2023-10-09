@@ -54,7 +54,7 @@ table = data_store.obs_table
 pos_obs = SkyCoord(table['GLON_PNT'], table['GLAT_PNT'], frame='galactic', unit='deg')
 
 # Define the path to the dataset directory where analysis results will be saved
-path_to_dataset = path_to_datasets / 'width_22x10' / 'diffuse+fermi'
+path_to_dataset = path_to_datasets / 'width_22x10'
 (path_to_dataset).mkdir(parents=True, exist_ok=True)
 
 # Define the name of the dataset file to be created
