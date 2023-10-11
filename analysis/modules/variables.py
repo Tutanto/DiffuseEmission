@@ -8,6 +8,7 @@ root_dir = cwd.parents[0]
 path_to_json = cwd / "gauss_results"
 path_to_models = cwd / "skymodel"
 path_to_results = cwd / "results"
+path_to_fluxdatapoints = cwd / "fluxpoints"
 
 path_to_logs = root_dir / "logs"
 path_to_datasets = root_dir / "datasets"

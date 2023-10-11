@@ -1,5 +1,5 @@
 {
-    "05_ecpl_gauss_center_fixed.yaml_fitted": {
+    "05_ecpl_gauss_center_fixed_fitted": {
         "cygnus_diffuse": {
             "models": [
                 "ExpCutoffPowerLawSpectralModel",
@@ -12,15 +12,15 @@
                 8746120.747709552
             ],
             "index": "0.928 +/- 0.295",
-            "amplitude": "0.000 +/- 0.000",
-            "reference": "1.000 +/- 0.000",
-            "lambda_": "0.573 +/- 0.130",
-            "alpha": "1.000 +/- 0.000",
-            "lon_0": "79.500 +/- 0.000",
-            "lat_0": "1.000 +/- 0.000",
-            "sigma": "1.749 +/- 0.045",
-            "e": "0.010 +/- 0.000",
-            "phi": "0.000 +/- 0.000"
+            "amplitude": "3.82e-11 +/- 4.64e-12",
+            "reference": "1 +/- 0",
+            "lambda_": "0.573 +/- 0.13",
+            "alpha": "1 +/- 0",
+            "lon_0": "79.5 +/- 0",
+            "lat_0": "1 +/- 0",
+            "sigma": "1.75 +/- 0.0448",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0"
         }
     }
 }

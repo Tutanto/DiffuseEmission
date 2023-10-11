@@ -1542,4 +1542,4 @@ components:
         -   name: reference
             value: 1.0
             unit: TeV
-covariance: 07_lp_gauss_center_fixed.yaml_fitted_covariance.dat
+covariance: 07_lp_gauss_center_fixed_fitted_covariance.dat

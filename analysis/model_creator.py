@@ -17,7 +17,7 @@ original_model_path = dc_folder / 'skymodel' / 'global_skymodel_v1.0.yaml'
 original_model = Models.read(original_model_path)
 
 original_model.remove('fermi bubble')
-original_model.remove('diffuse')
+#original_model.remove('diffuse')
 original_model.freeze('spatial')
 original_model.freeze('spectral')
 
@@ -96,5 +96,5 @@ for i, (position, spectral, spatial) in enumerate(itertools.product(center_posit
     trimmed_string_spec = models_diffuse[0].spectral_model.tag[1]
     trimmed_string_spat = models_diffuse[0].spatial_model.tag[1]
 
-    path_to_model = path_to_models / 'no_diffuse' / f'{i:02d}_{trimmed_string_spec}_{trimmed_string_spat}_{position}.yaml'
+    path_to_model = path_to_models / 'diffuse' / f'{i:02d}_{trimmed_string_spec}_{trimmed_string_spat}_{position}.yaml'
     models_diffuse.write(path_to_model, overwrite=True)

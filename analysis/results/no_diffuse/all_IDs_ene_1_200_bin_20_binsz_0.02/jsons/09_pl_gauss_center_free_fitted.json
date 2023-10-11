@@ -1,5 +1,5 @@
 {
-    "09_pl_gauss_center_free.yaml_fitted": {
+    "09_pl_gauss_center_free_fitted": {
         "cygnus_diffuse": {
             "models": [
                 "PowerLawSpectralModel",
@@ -11,14 +11,14 @@
                 "Optimization terminated successfully..",
                 8746209.48152124
             ],
-            "index": "2.605 +/- 0.030",
-            "amplitude": "0.000 +/- 0.000",
-            "reference": "1.000 +/- 0.000",
-            "lon_0": "79.500 +/- 0.000",
-            "lat_0": "1.000 +/- 0.000",
-            "sigma": "1.679 +/- 0.044",
-            "e": "0.010 +/- 0.000",
-            "phi": "0.000 +/- 0.000"
+            "index": "2.6 +/- 0.0297",
+            "amplitude": "2.98e-11 +/- 1.5e-12",
+            "reference": "1 +/- 0",
+            "lon_0": "79.5 +/- 0",
+            "lat_0": "1 +/- 0",
+            "sigma": "1.68 +/- 0.0443",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0"
         }
     }
 }

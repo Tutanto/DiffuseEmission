@@ -1541,4 +1541,4 @@ components:
         -   name: reference
             value: 1.0
             unit: TeV
-covariance: 05_ecpl_gauss_center_fixed.yaml_fitted_covariance.dat
+covariance: 05_ecpl_gauss_center_fixed_fitted_covariance.dat

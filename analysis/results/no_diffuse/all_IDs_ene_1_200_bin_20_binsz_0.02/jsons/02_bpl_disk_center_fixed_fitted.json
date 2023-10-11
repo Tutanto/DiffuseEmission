@@ -1,5 +1,5 @@
 {
-    "02_bpl_disk_center_fixed.yaml_fitted": {
+    "02_bpl_disk_center_fixed_fitted": {
         "cygnus_diffuse": {
             "models": [
                 "BrokenPowerLawSpectralModel",
@@ -11,16 +11,16 @@
                 "Optimization failed. Call limit was reached.",
                 8746299.292613972
             ],
-            "index1": "2.309 +/- 0.055",
-            "index2": "11.909 +/- 1.906",
-            "amplitude": "0.000 +/- 0.000",
-            "ebreak": "6.834 +/- 0.432",
-            "lon_0": "79.500 +/- 0.000",
-            "lat_0": "1.000 +/- 0.000",
-            "r_0": "2.711 +/- 0.033",
-            "e": "0.010 +/- 0.000",
-            "phi": "0.000 +/- 0.000",
-            "edge_width": "0.100 +/- 0.000"
+            "index1": "2.31 +/- 0.0549",
+            "index2": "11.9 +/- 1.91",
+            "amplitude": "2.27e-13 +/- 4.24e-14",
+            "ebreak": "6.83 +/- 0.432",
+            "lon_0": "79.5 +/- 0",
+            "lat_0": "1 +/- 0",
+            "r_0": "2.71 +/- 0.0331",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0",
+            "edge_width": "0.1 +/- 0"
         }
     }
 }

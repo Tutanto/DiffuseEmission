@@ -1543,4 +1543,4 @@ components:
         -   name: reference
             value: 1.0
             unit: TeV
-covariance: 12_ecpl_disk_center_free.yaml_fitted_covariance.dat
+covariance: 12_ecpl_disk_center_free_fitted_covariance.dat

@@ -1,5 +1,5 @@
 {
-    "07_lp_gauss_center_fixed.yaml_fitted": {
+    "07_lp_gauss_center_fixed_fitted": {
         "cygnus_diffuse": {
             "models": [
                 "LogParabolaSpectralModel",
@@ -11,15 +11,15 @@
                 "Optimization terminated successfully..",
                 8746125.507915845
             ],
-            "amplitude": "0.000 +/- 0.000",
-            "reference": "1.000 +/- 0.000",
-            "alpha": "2.000 +/- 0.000",
-            "beta": "0.304 +/- 0.022",
-            "lon_0": "79.500 +/- 0.000",
-            "lat_0": "1.000 +/- 0.000",
-            "sigma": "1.723 +/- 0.043",
-            "e": "0.010 +/- 0.000",
-            "phi": "0.000 +/- 0.000"
+            "amplitude": "2.7e-11 +/- 1.24e-12",
+            "reference": "1 +/- 0",
+            "alpha": "2 +/- 9.98e-05",
+            "beta": "0.304 +/- 0.0222",
+            "lon_0": "79.5 +/- 0",
+            "lat_0": "1 +/- 0",
+            "sigma": "1.72 +/- 0.043",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0"
         }
     }
 }

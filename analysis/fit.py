@@ -23,9 +23,9 @@ path_to_dataset = path_to_datasets / 'width_22x10' / dataset_name
 dataset = MapDataset.read(filename=path_to_dataset)
 
 # Define the filename and path for the fitted model to be saved
-models = path_to_models / 'no_diffuse'
-saved_models = path_to_results / 'no_diffuse' / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "models"
-saved_jsons = path_to_results / 'no_diffuse' / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "jsons"
+models = path_to_models / 'diffuse'
+saved_models = path_to_results / 'diffuse' / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "models"
+saved_jsons = path_to_results / 'diffuse' / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "jsons"
 saved_models.mkdir(parents=True, exist_ok=True)
 saved_jsons.mkdir(parents=True, exist_ok=True)
 

@@ -1539,4 +1539,4 @@ components:
         -   name: reference
             value: 1.0
             unit: TeV
-covariance: 11_bpl_gauss_center_free.yaml_fitted_covariance.dat
+covariance: 11_bpl_gauss_center_free_fitted_covariance.dat

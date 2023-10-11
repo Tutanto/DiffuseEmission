@@ -1,5 +1,5 @@
 {
-    "04_ecpl_disk_center_fixed.yaml_fitted": {
+    "04_ecpl_disk_center_fixed_fitted": {
         "cygnus_diffuse": {
             "models": [
                 "ExpCutoffPowerLawSpectralModel",
@@ -11,17 +11,17 @@
                 "Optimization terminated successfully., but uncertainties are unreliable.",
                 8746262.963440105
             ],
-            "index": "0.967 +/- 0.096",
-            "amplitude": "0.000 +/- 0.000",
-            "reference": "1.000 +/- 0.000",
-            "lambda_": "0.568 +/- 0.022",
-            "alpha": "1.000 +/- 0.000",
-            "lon_0": "79.500 +/- 0.000",
-            "lat_0": "1.000 +/- 0.000",
-            "r_0": "2.730 +/- 0.019",
-            "e": "0.010 +/- 0.000",
-            "phi": "0.000 +/- 0.000",
-            "edge_width": "0.100 +/- 0.000"
+            "index": "0.967 +/- 0.0964",
+            "amplitude": "2.85e-11 +/- 1.03e-12",
+            "reference": "1 +/- 0",
+            "lambda_": "0.568 +/- 0.0218",
+            "alpha": "1 +/- 0",
+            "lon_0": "79.5 +/- 0",
+            "lat_0": "1 +/- 0",
+            "r_0": "2.73 +/- 0.0186",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0",
+            "edge_width": "0.1 +/- 0"
         }
     }
 }

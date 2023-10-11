@@ -1,5 +1,5 @@
 {
-    "03_bpl_gauss_center_fixed.yaml_fitted": {
+    "03_bpl_gauss_center_fixed_fitted": {
         "cygnus_diffuse": {
             "models": [
                 "BrokenPowerLawSpectralModel",
@@ -11,15 +11,15 @@
                 "Optimization failed. Estimated distance to minimum too large.",
                 8746176.523891706
             ],
-            "index1": "2.472 +/- 1.000",
-            "index2": "7.217 +/- 1.000",
-            "amplitude": "0.000 +/- 0.000",
-            "ebreak": "8.698 +/- 10.001",
-            "lon_0": "79.500 +/- 0.000",
-            "lat_0": "1.000 +/- 0.000",
-            "sigma": "1.671 +/- 1.445",
-            "e": "0.010 +/- 0.000",
-            "phi": "0.000 +/- 0.000"
+            "index1": "2.47 +/- 1",
+            "index2": "7.22 +/- 1",
+            "amplitude": "1.28e-13 +/- 1e-13",
+            "ebreak": "8.7 +/- 10",
+            "lon_0": "79.5 +/- 0",
+            "lat_0": "1 +/- 0",
+            "sigma": "1.67 +/- 1.45",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0"
         }
     }
 }

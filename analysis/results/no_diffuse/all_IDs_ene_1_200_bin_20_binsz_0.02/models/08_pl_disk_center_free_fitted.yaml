@@ -1537,4 +1537,4 @@ components:
         -   name: reference
             value: 1.0
             unit: TeV
-covariance: 08_pl_disk_center_free.yaml_fitted_covariance.dat
+covariance: 08_pl_disk_center_free_fitted_covariance.dat

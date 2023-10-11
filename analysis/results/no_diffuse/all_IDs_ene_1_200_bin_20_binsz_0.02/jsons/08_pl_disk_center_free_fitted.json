@@ -1,5 +1,5 @@
 {
-    "08_pl_disk_center_free.yaml_fitted": {
+    "08_pl_disk_center_free_fitted": {
         "cygnus_diffuse": {
             "models": [
                 "PowerLawSpectralModel",
@@ -11,15 +11,15 @@
                 "Optimization terminated successfully..",
                 8746346.363628114
             ],
-            "index": "2.647 +/- 0.039",
-            "amplitude": "0.000 +/- 0.000",
-            "reference": "1.000 +/- 0.000",
-            "lon_0": "79.500 +/- 0.000",
-            "lat_0": "1.000 +/- 0.000",
-            "r_0": "2.294 +/- 0.044",
-            "e": "0.010 +/- 0.000",
-            "phi": "0.000 +/- 0.000",
-            "edge_width": "0.100 +/- 0.000"
+            "index": "2.65 +/- 0.0388",
+            "amplitude": "1.89e-11 +/- 7.99e-13",
+            "reference": "1 +/- 0",
+            "lon_0": "79.5 +/- 0",
+            "lat_0": "1 +/- 0",
+            "r_0": "2.29 +/- 0.0437",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0",
+            "edge_width": "0.1 +/- 0"
         }
     }
 }
