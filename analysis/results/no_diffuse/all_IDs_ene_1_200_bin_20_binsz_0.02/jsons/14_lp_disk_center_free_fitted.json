@@ -1,0 +1,26 @@
+{
+    "14_lp_disk_center_free.yaml_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "LogParabolaSpectralModel",
+                "DiskSpatialModel",
+                "dataset_all_IDs_ene_1_200_bin_20_binsz_0.02.fits.gz"
+            ],
+            "result": [
+                true,
+                "Optimization terminated successfully..",
+                8746266.31079153
+            ],
+            "amplitude": "0.000 +/- 0.000",
+            "reference": "1.000 +/- 0.000",
+            "alpha": "2.000 +/- 0.000",
+            "beta": "0.314 +/- 0.026",
+            "lon_0": "79.500 +/- 0.000",
+            "lat_0": "1.000 +/- 0.000",
+            "r_0": "2.721 +/- 0.032",
+            "e": "0.010 +/- 0.000",
+            "phi": "0.000 +/- 0.000",
+            "edge_width": "0.100 +/- 0.000"
+        }
+    }
+}

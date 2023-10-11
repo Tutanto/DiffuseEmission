@@ -1,0 +1,26 @@
+{
+    "13_ecpl_gauss_center_free.yaml_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "ExpCutoffPowerLawSpectralModel",
+                "GaussianSpatialModel",
+                "dataset_all_IDs_ene_1_200_bin_20_binsz_0.02.fits.gz"
+            ],
+            "result": [
+                false,
+                "Optimization failed. Estimated distance to minimum too large.",
+                8746120.747709552
+            ],
+            "index": "0.928 +/- 0.295",
+            "amplitude": "0.000 +/- 0.000",
+            "reference": "1.000 +/- 0.000",
+            "lambda_": "0.573 +/- 0.130",
+            "alpha": "1.000 +/- 0.000",
+            "lon_0": "79.500 +/- 0.000",
+            "lat_0": "1.000 +/- 0.000",
+            "sigma": "1.749 +/- 0.045",
+            "e": "0.010 +/- 0.000",
+            "phi": "0.000 +/- 0.000"
+        }
+    }
+}

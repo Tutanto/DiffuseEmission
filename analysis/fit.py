@@ -39,7 +39,7 @@ for path in paths:
     dataset.models = models_fit
 
     # Define the names of the output files for the fit results
-    filename = f"{path.name}_fitted"
+    filename = f"{path.with_suffix('').name}_fitted"
     result_model = f'{filename}.yaml'
     result_json = f'{filename}.json'
 
