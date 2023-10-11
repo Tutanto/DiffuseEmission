@@ -48,7 +48,7 @@ logger.debug(f"Dataset geom: {dataset.geoms['geom']}")
 logger.debug(f"Dataset energy axis: {dataset.geoms['geom'].axes['energy']}")
 
 # Compute the flux data points for the specified source and energy range
-result = calculate_sed(dataset=dataset, source=source, emin=1, emax=200, step=1., n_jobs=6, logger=logger)
+result = calculate_sed(dataset=dataset, source=source, emin=1, emax=200, step=2., n_jobs=9, logger=logger)
 
 # Save the calculated SED data points to a FITS file
 result.write(filename=output_flux / f"{sedname}.fits", overwrite=True)
