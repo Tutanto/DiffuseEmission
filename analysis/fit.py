@@ -10,7 +10,7 @@ from modules.variables import *
 
 # Define the name of the dataset file to be used for the fit
 file_name = 'all_IDs'
-e_min = 1
+e_min = 0.7
 e_max = 200
 bin = 20
 binsz = 0.02

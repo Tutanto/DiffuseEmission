@@ -1,0 +1,25 @@
+{
+    "08_pl_disk_center_free_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "PowerLawSpectralModel",
+                "DiskSpatialModel",
+                "dataset_all_IDs_ene_0.7_100_bin_20_binsz_0.02.fits.gz"
+            ],
+            "result": [
+                true,
+                "Optimization terminated successfully..",
+                9323948.06059858
+            ],
+            "index": "2.49 +/- 0.0258",
+            "amplitude": "2.04e-11 +/- 7.68e-13",
+            "reference": "1 +/- 0",
+            "lon_0": "79.5 +/- 0",
+            "lat_0": "1 +/- 0",
+            "r_0": "2.75 +/- 0.0296",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0",
+            "edge_width": "0.1 +/- 0"
+        }
+    }
+}

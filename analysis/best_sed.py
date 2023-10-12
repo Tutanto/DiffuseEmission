@@ -9,8 +9,8 @@ from modules.variables import *
 
 # Name of the dataset file to be used for the SED calculation
 file_name = 'all_IDs'
-e_min = 1
-e_max = 200
+e_min = 0.7
+e_max = 100
 bin = 20
 binsz = 0.02
 dataset_name = f"dataset_{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}.fits.gz"
