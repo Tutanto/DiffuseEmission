@@ -28,8 +28,8 @@ for model in original_model:
             model.spectral_model.norm.frozen = False
 
 disk = DiskSpatialModel(
-    lon_0=79.5 * u.deg,
-    lat_0=1 * u.deg,
+    lon_0=79.6188337 * u.deg,
+    lat_0=0.962326 * u.deg,
     r_0="1 deg",
     e=0.01,
     phi=0 * u.deg,
@@ -37,8 +37,8 @@ disk = DiskSpatialModel(
     frame="galactic",
 )
 gaussian = GaussianSpatialModel(
-    lon_0=79.5 * u.deg,
-    lat_0=1 * u.deg,
+    lon_0=79.6188337 * u.deg,
+    lat_0=0.962326 * u.deg,
     sigma="2.1 deg",
     e=0.01,
     phi=0 * u.deg,
