@@ -8,6 +8,7 @@ from GPyUtils.logging_config import logging_conf
 from modules.variables import *
 
 # Name of the dataset file to be used for the SED calculation
+diffuse = 'no_diffuse'
 file_name = 'all_IDs'
 e_min = 0.7
 e_max = 100
@@ -23,7 +24,7 @@ dataset = MapDataset.read(filename=path_to_dataset)
 
 # Name of the YAML file containing the fitted model to be used for the SED calculation
 filename = "00_pl_disk_center_fixed_fitted"
-path_to_fit_models = path_to_results / 'no_diffuse' / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "models"
+path_to_fit_models = path_to_results / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "models"
 
 # Load the fitted model from the YAML file
 models_fit = Models.read(f"{path_to_fit_models}/{filename}.yaml")
@@ -36,7 +37,7 @@ source = dataset.models[0]
 
 # Define the name of the output directory for the SED data points
 sedname = f"spectrum_{source.name}"
-output_flux = path_to_fluxdatapoints / filename
+output_flux = path_to_fluxdatapoints / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}"
 output_flux.mkdir(parents=True, exist_ok=True)
 
 # Set up log configuration and create a logger for the SED calculation

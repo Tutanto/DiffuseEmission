@@ -10,7 +10,7 @@ components:
             value: 2.7
         -   name: amplitude
             value: 1.0e-13
-            unit: cm-2 s-1 TeV-1
+            unit: TeV-1 s-1 cm-2
         -   name: ebreak
             value: 10.0
             unit: TeV
@@ -19,11 +19,11 @@ components:
         frame: galactic
         parameters:
         -   name: lon_0
-            value: 79.5
+            value: 79.6188337
             unit: deg
             frozen: true
         -   name: lat_0
-            value: 1.0
+            value: 0.962326
             unit: deg
             frozen: true
         -   name: r_0
@@ -56,7 +56,7 @@ components:
         parameters: []
         filename: /home/tutone/Data/ASTRI/DC-GCygni/skymodel/cygnus_gp.fits
         normalize: false
-        unit: 1 / (cm2 MeV s sr)
+        unit: 1 / (MeV s sr cm2)
 -   name: PSR J1958+2846
     type: SkyModel
     spectral:
@@ -64,7 +64,7 @@ components:
         parameters:
         -   name: amplitude
             value: 3.0e-15
-            unit: cm-2 s-1 TeV-1
+            unit: TeV-1 s-1 cm-2
         -   name: reference
             value: 7.0
             unit: TeV
@@ -102,7 +102,7 @@ components:
         parameters:
         -   name: amplitude
             value: 5.0e-15
-            unit: cm-2 s-1 TeV-1
+            unit: TeV-1 s-1 cm-2
         -   name: reference
             value: 7.0
             unit: TeV
@@ -143,7 +143,7 @@ components:
             frozen: true
         -   name: amplitude
             value: 2.0e-13
-            unit: cm-2 s-1 TeV-1
+            unit: TeV-1 s-1 cm-2
         -   name: reference
             value: 1.0
             unit: TeV
@@ -170,7 +170,7 @@ components:
             frozen: true
         -   name: amplitude
             value: 3.8e-13
-            unit: cm-2 s-1 TeV-1
+            unit: TeV-1 s-1 cm-2
         -   name: reference
             value: 1.0
             unit: TeV
@@ -197,7 +197,7 @@ components:
             frozen: true
         -   name: amplitude
             value: 3.0e-13
-            unit: cm-2 s-1 TeV-1
+            unit: TeV-1 s-1 cm-2
         -   name: reference
             value: 1.0
             unit: TeV
@@ -224,7 +224,7 @@ components:
             frozen: true
         -   name: amplitude
             value: 1.24e-13
-            unit: cm-2 s-1 TeV-1
+            unit: TeV-1 s-1 cm-2
         -   name: reference
             value: 2.3
             unit: TeV
@@ -262,7 +262,7 @@ components:
         parameters:
         -   name: amplitude
             value: 6.0e-16
-            unit: cm-2 s-1 TeV-1
+            unit: TeV-1 s-1 cm-2
         -   name: reference
             value: 40.0
             unit: TeV
@@ -494,7 +494,7 @@ components:
             - 0.0
             - 0.0
             - 0.0
-            unit: 1 / (cm2 s TeV)
+            unit: 1 / (TeV s cm2)
     spatial:
         type: TemplateSpatialModel
         frame: galactic
@@ -615,7 +615,7 @@ components:
             - 2.8552486053120066e-18
             - 1.9453088701698683e-18
             - 1.3252868263792742e-18
-            unit: 1 / (cm2 s TeV)
+            unit: 1 / (TeV s cm2)
     spatial:
         type: DiskSpatialModel
         frame: galactic
@@ -752,7 +752,7 @@ components:
             - 2.121835101097723e-19
             - 1.3140404595153022e-19
             - 8.137770815625175e-20
-            unit: 1 / (cm2 s TeV)
+            unit: 1 / (TeV s cm2)
     spatial:
         type: PointSpatialModel
         frame: galactic
@@ -878,7 +878,7 @@ components:
             - 1.1596330994636896e-18
             - 7.617261396852704e-19
             - 5.003496494730499e-19
-            unit: 1 / (cm2 s TeV)
+            unit: 1 / (TeV s cm2)
     spatial:
         type: PointSpatialModel
         frame: galactic
@@ -1004,7 +1004,7 @@ components:
             - 7.14936086354335e-19
             - 4.681050196132799e-19
             - 3.064901151130939e-19
-            unit: 1 / (cm2 s TeV)
+            unit: 1 / (TeV s cm2)
     spatial:
         type: PointSpatialModel
         frame: galactic
@@ -1130,7 +1130,7 @@ components:
             - 1.1574279723640113e-18
             - 7.42931171902131e-19
             - 4.768720803177296e-19
-            unit: 1 / (cm2 s TeV)
+            unit: 1 / (TeV s cm2)
     spatial:
         type: DiskSpatialModel
         frame: galactic
@@ -1267,7 +1267,7 @@ components:
             - 1.453188573460568e-18
             - 9.682930843959342e-19
             - 6.451883554169014e-19
-            unit: 1 / (cm2 s TeV)
+            unit: 1 / (TeV s cm2)
     spatial:
         type: PointSpatialModel
         frame: galactic
@@ -1393,7 +1393,7 @@ components:
             - 2.2758869938552405e-18
             - 1.5436230222571777e-18
             - 1.0469405823412565e-18
-            unit: 1 / (cm2 s TeV)
+            unit: 1 / (TeV s cm2)
     spatial:
         type: DiskSpatialModel
         frame: galactic
@@ -1530,7 +1530,7 @@ components:
             - 1.7462383903407053e-18
             - 1.1893685321712996e-18
             - 8.1004121376886635e-19
-            unit: 1 / (cm2 s TeV)
+            unit: 1 / (TeV s cm2)
     spatial:
         type: PointSpatialModel
         frame: galactic

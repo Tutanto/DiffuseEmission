@@ -23,11 +23,11 @@ components:
         frame: galactic
         parameters:
         -   name: lon_0
-            value: 79.5
+            value: 79.6188337
             unit: deg
             frozen: true
         -   name: lat_0
-            value: 1.0
+            value: 0.962326
             unit: deg
             frozen: true
         -   name: r_0
