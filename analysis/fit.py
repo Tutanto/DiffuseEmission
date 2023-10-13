@@ -9,6 +9,7 @@ from GPyUtils.write_minuit_result import MinuitResultWriter
 from modules.variables import *
 
 # Define the name of the dataset file to be used for the fit
+diffuse = 'no_diffuse'
 file_name = 'all_IDs'
 e_min = 0.7
 e_max = 200
@@ -23,9 +24,9 @@ path_to_dataset = path_to_datasets / 'width_22x10' / dataset_name
 dataset = MapDataset.read(filename=path_to_dataset)
 
 # Define the filename and path for the fitted model to be saved
-models = path_to_models / 'diffuse'
-saved_models = path_to_results / 'diffuse' / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "models"
-saved_jsons = path_to_results / 'diffuse' / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "jsons"
+models = path_to_models / diffuse
+saved_models = path_to_results / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "models"
+saved_jsons = path_to_results / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "jsons"
 saved_models.mkdir(parents=True, exist_ok=True)
 saved_jsons.mkdir(parents=True, exist_ok=True)
 
