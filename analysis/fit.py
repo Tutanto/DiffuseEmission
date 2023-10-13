@@ -60,7 +60,7 @@ for path in paths:
 
         # Run the fit using the Minuit optimizer from Gammapy
         fit = Fit(store_trace=True)
-        minuit_opts = {"tol": 0.1, "strategy": 0}
+        minuit_opts = {"tol": 0.1, "strategy": 1}
         fit.backend = "minuit"
         fit.optimize_opts = minuit_opts
         result_fit = fit.run(dataset)
