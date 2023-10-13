@@ -1,0 +1,25 @@
+{
+    "03_bpl_gauss_center_fixed_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "BrokenPowerLawSpectralModel",
+                "GaussianSpatialModel",
+                "dataset_all_IDs_ene_1_100_bin_20_binsz_0.02.fits.gz"
+            ],
+            "result": [
+                false,
+                "Optimization failed. Estimated distance to minimum too large.",
+                9257634.166293237
+            ],
+            "index1": "0.779 +/- 0.783",
+            "index2": "17.9 +/- 1.6",
+            "amplitude": "7.55e-12 +/- 7.92e-13",
+            "ebreak": "2.99 +/- 0.39",
+            "lon_0": "79.6 +/- 0",
+            "lat_0": "0.962 +/- 0",
+            "sigma": "2 +/- 1.1",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0"
+        }
+    }
+}
