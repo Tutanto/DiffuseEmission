@@ -8,16 +8,16 @@
             ],
             "result": [
                 false,
-                "Optimization failed. Estimated distance to minimum too large.",
-                8499333.061226023
+                "Optimization terminated successfully.",
+                8499333.065687826
             ],
-            "index1": "2.04 +/- 0.0805",
-            "index2": "11.8 +/- 0.0573",
+            "index1": "2.04 +/- 0.0806",
+            "index2": "11.8 +/- 0.16",
             "amplitude": "9.05e-13 +/- 2.62e-13",
             "ebreak": "5.21 +/- 0.472",
             "lon_0": "79.6 +/- 0",
             "lat_0": "0.962 +/- 0",
-            "sigma": "1.88 +/- 0.0444",
+            "sigma": "1.88 +/- 0.0446",
             "e": "0.01 +/- 0",
             "phi": "0 +/- 0"
         }

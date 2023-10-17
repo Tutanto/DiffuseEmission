@@ -5,12 +5,12 @@ components:
         type: PowerLawSpectralModel
         parameters:
         -   name: index
-            value: 2.4827075273969075
-            error: 0.02327846782279944
+            value: 2.4819152566405456
+            error: 0.023318332652558074
         -   name: amplitude
-            value: 2.9830688913896255e-11
-            unit: TeV-1 s-1 cm-2
-            error: 1.4041039132421857e-12
+            value: 2.981332952931334e-11
+            unit: cm-2 s-1 TeV-1
+            error: 1.4180968525365627e-12
         -   name: reference
             value: 1.0
             unit: TeV
@@ -23,13 +23,13 @@ components:
             unit: deg
             frozen: true
         -   name: lat_0
-            value: 0.9623259999999999
+            value: 0.962326
             unit: deg
             frozen: true
         -   name: sigma
-            value: 1.8365829850650854
+            value: 1.8365806060723446
             unit: deg
-            error: 0.0504264826820436
+            error: 0.049141338333905
             min: 0.1
             max: 3.0
         -   name: e
@@ -43,9 +43,9 @@ components:
         type: LogParabolaSpectralModel
         parameters:
         -   name: amplitude
-            value: 4.092034608606144e-15
-            unit: TeV-1 s-1 cm-2
-            error: 1.2653494846955478e-15
+            value: 4.099909536522051e-15
+            unit: cm-2 s-1 TeV-1
+            error: 1.2800747156271121e-15
         -   name: reference
             value: 7.0
             unit: TeV
@@ -82,9 +82,9 @@ components:
         type: LogParabolaSpectralModel
         parameters:
         -   name: amplitude
-            value: 5.559868735948659e-15
-            unit: TeV-1 s-1 cm-2
-            error: 1.3541075186718683e-15
+            value: 5.561893889356787e-15
+            unit: cm-2 s-1 TeV-1
+            error: 1.354026603586139e-15
         -   name: reference
             value: 7.0
             unit: TeV
@@ -107,7 +107,7 @@ components:
             unit: deg
             frozen: true
         -   name: sigma
-            value: 0.22
+            value: 0.21999999999999997
             unit: deg
             frozen: true
         -   name: e
@@ -124,9 +124,9 @@ components:
             value: 1.5
             frozen: true
         -   name: amplitude
-            value: 2.1849718869893892e-13
-            unit: TeV-1 s-1 cm-2
-            error: 1.4955832387022815e-14
+            value: 2.1853832118089142e-13
+            unit: cm-2 s-1 TeV-1
+            error: 1.536767212783379e-14
         -   name: reference
             value: 1.0
             unit: TeV
@@ -152,9 +152,9 @@ components:
             value: 2.0
             frozen: true
         -   name: amplitude
-            value: 4.277767884697961e-13
-            unit: TeV-1 s-1 cm-2
-            error: 3.42416128290161e-14
+            value: 4.2802806227520467e-13
+            unit: cm-2 s-1 TeV-1
+            error: 3.484130219301135e-14
         -   name: reference
             value: 1.0
             unit: TeV
@@ -180,9 +180,9 @@ components:
             value: 2.3
             frozen: true
         -   name: amplitude
-            value: 3.416415312207127e-13
-            unit: TeV-1 s-1 cm-2
-            error: 3.6904153686785355e-14
+            value: 3.4198795757263996e-13
+            unit: cm-2 s-1 TeV-1
+            error: 3.731256346879163e-14
         -   name: reference
             value: 1.0
             unit: TeV
@@ -208,9 +208,9 @@ components:
             value: 2.0
             frozen: true
         -   name: amplitude
-            value: 1.1701253087311992e-13
-            unit: TeV-1 s-1 cm-2
-            error: 8.785109209612825e-15
+            value: 1.1704446154213116e-13
+            unit: cm-2 s-1 TeV-1
+            error: 8.941462114619201e-15
         -   name: reference
             value: 2.3
             unit: TeV
@@ -237,7 +237,7 @@ components:
             unit: deg
             frozen: true
         -   name: e
-            value: 0.9000000000000001
+            value: 0.9
         -   name: phi
             value: 63.0
             unit: deg
@@ -247,9 +247,9 @@ components:
         type: LogParabolaSpectralModel
         parameters:
         -   name: amplitude
-            value: 6.015561783845019e-16
-            unit: TeV-1 s-1 cm-2
-            error: 5.308192204624068e-17
+            value: 6.013530214973774e-16
+            unit: cm-2 s-1 TeV-1
+            error: 5.517758694029797e-17
         -   name: reference
             value: 40.0
             unit: TeV
@@ -257,7 +257,7 @@ components:
             value: 2.0
             frozen: true
         -   name: beta
-            value: 0.49999999999999994
+            value: 0.5
             frozen: true
     spatial:
         type: DiskSpatialModel
@@ -480,7 +480,7 @@ components:
             - 0.0
             - 0.0
             - 0.0
-            unit: 1 / (TeV s cm2)
+            unit: 1 / (cm2 s TeV)
     spatial:
         type: TemplateSpatialModel
         frame: galactic
@@ -600,7 +600,7 @@ components:
             - 2.8552486053120066e-18
             - 1.9453088701698683e-18
             - 1.3252868263792742e-18
-            unit: 1 / (TeV s cm2)
+            unit: 1 / (cm2 s TeV)
     spatial:
         type: DiskSpatialModel
         frame: galactic
@@ -614,7 +614,7 @@ components:
             unit: deg
             frozen: true
         -   name: r_0
-            value: 0.49999999999999994
+            value: 0.5
             unit: deg
             frozen: true
         -   name: e
@@ -736,7 +736,7 @@ components:
             - 2.121835101097723e-19
             - 1.3140404595153022e-19
             - 8.137770815625175e-20
-            unit: 1 / (TeV s cm2)
+            unit: 1 / (cm2 s TeV)
     spatial:
         type: PointSpatialModel
         frame: galactic
@@ -861,7 +861,7 @@ components:
             - 1.1596330994636896e-18
             - 7.617261396852704e-19
             - 5.003496494730499e-19
-            unit: 1 / (TeV s cm2)
+            unit: 1 / (cm2 s TeV)
     spatial:
         type: PointSpatialModel
         frame: galactic
@@ -986,7 +986,7 @@ components:
             - 7.14936086354335e-19
             - 4.681050196132799e-19
             - 3.064901151130939e-19
-            unit: 1 / (TeV s cm2)
+            unit: 1 / (cm2 s TeV)
     spatial:
         type: PointSpatialModel
         frame: galactic
@@ -1111,7 +1111,7 @@ components:
             - 1.1574279723640113e-18
             - 7.42931171902131e-19
             - 4.768720803177296e-19
-            unit: 1 / (TeV s cm2)
+            unit: 1 / (cm2 s TeV)
     spatial:
         type: DiskSpatialModel
         frame: galactic
@@ -1247,7 +1247,7 @@ components:
             - 1.453188573460568e-18
             - 9.682930843959342e-19
             - 6.451883554169014e-19
-            unit: 1 / (TeV s cm2)
+            unit: 1 / (cm2 s TeV)
     spatial:
         type: PointSpatialModel
         frame: galactic
@@ -1372,7 +1372,7 @@ components:
             - 2.2758869938552405e-18
             - 1.5436230222571777e-18
             - 1.0469405823412565e-18
-            unit: 1 / (TeV s cm2)
+            unit: 1 / (cm2 s TeV)
     spatial:
         type: DiskSpatialModel
         frame: galactic
@@ -1386,7 +1386,7 @@ components:
             unit: deg
             frozen: true
         -   name: r_0
-            value: 0.49999999999999994
+            value: 0.5
             unit: deg
             frozen: true
         -   name: e
@@ -1508,7 +1508,7 @@ components:
             - 1.7462383903407053e-18
             - 1.1893685321712996e-18
             - 8.1004121376886635e-19
-            unit: 1 / (TeV s cm2)
+            unit: 1 / (cm2 s TeV)
     spatial:
         type: PointSpatialModel
         frame: galactic
@@ -1528,8 +1528,8 @@ components:
         type: PowerLawNormSpectralModel
         parameters:
         -   name: norm
-            value: 0.9873136330358693
-            error: 0.0006166402092933017
+            value: 0.9873151275965885
+            error: 0.0006099226330902216
         -   name: tilt
             value: 0.0
         -   name: reference

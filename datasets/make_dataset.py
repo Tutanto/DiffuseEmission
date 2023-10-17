@@ -44,9 +44,9 @@ path_to_dataset = path_to_datasets / 'width_22x10'
 (path_to_dataset).mkdir(parents=True, exist_ok=True)
 
 # Define the name of the dataset file to be created
-e_min = 0.7
+e_min = 1
 e_max = 100
-bin = 20
+bin = 15
 binsz = 0.02
 dataset_name = f"dataset_{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}.fits.gz"
 

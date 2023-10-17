@@ -8,16 +8,16 @@
             ],
             "result": [
                 false,
-                "Optimization failed. Estimated distance to minimum too large.",
-                9323847.157524694
+                "Optimization terminated successfully.",
+                9323838.509134764
             ],
-            "index1": "1.95 +/- 0.0209",
-            "index2": "22 +/- 9.25e-15",
-            "amplitude": "6.55e-13 +/- 4.36e-14",
-            "ebreak": "5.28 +/- 0.138",
+            "index1": "1.81 +/- 0.0814",
+            "index2": "9.12 +/- 5.71e-05",
+            "amplitude": "1.19e-12 +/- 1.93e-13",
+            "ebreak": "4.22 +/- 0.276",
             "lon_0": "79.6 +/- 0",
             "lat_0": "0.962 +/- 0",
-            "r_0": "2.83 +/- 0.0525",
+            "r_0": "2.85 +/- 0.037",
             "e": "0.01 +/- 0",
             "phi": "0 +/- 0",
             "edge_width": "0.1 +/- 0"

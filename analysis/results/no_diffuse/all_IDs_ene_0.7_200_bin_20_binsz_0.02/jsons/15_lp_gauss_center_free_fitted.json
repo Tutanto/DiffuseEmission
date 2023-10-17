@@ -7,17 +7,17 @@
                 "dataset_all_IDs_ene_0.7_200_bin_20_binsz_0.02.fits.gz"
             ],
             "result": [
-                true,
-                "Optimization terminated successfully..",
-                8499239.37213777
+                false,
+                "Optimization terminated successfully.",
+                8499239.372927153
             ],
-            "amplitude": "3.36e-11 +/- 1.05e-12",
+            "amplitude": "3.35e-11 +/- 1.54e-12",
             "reference": "1 +/- 0",
-            "alpha": "2 +/- 1.26e-05",
-            "beta": "0.334 +/- 0.0211",
+            "alpha": "2 +/- 2.8e-05",
+            "beta": "0.334 +/- 0.0233",
             "lon_0": "79.6 +/- 0",
             "lat_0": "0.962 +/- 0",
-            "sigma": "1.9 +/- 0.0113",
+            "sigma": "1.9 +/- 0.0494",
             "e": "0.01 +/- 0",
             "phi": "0 +/- 0"
         }

@@ -12,9 +12,9 @@ from modules.variables import *
 diffuse = 'no_diffuse'
 file_name = 'all_IDs'
 e_min = 1
-e_max = 200
+e_max = 100
 bin = 20
-binsz = 0.02
+binsz = 0.05
 dataset_name = f"dataset_{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}.fits.gz"
 
 # Set the path to the dataset file
@@ -60,7 +60,7 @@ for path in paths:
 
         # Run the fit using the Minuit optimizer from Gammapy
         fit = Fit(store_trace=True)
-        minuit_opts = {"tol": 0.01, "strategy": 1}
+        minuit_opts = {"tol": 0.001, "strategy": 1}
         fit.backend = "minuit"
         fit.optimize_opts = minuit_opts
         result_fit = fit.run(dataset)

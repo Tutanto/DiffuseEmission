@@ -8,16 +8,16 @@
             ],
             "result": [
                 false,
-                "Optimization failed. Estimated distance to minimum too large.",
-                8499038.81963371
+                "Optimization failed. Call limit was reached.",
+                8499089.164400341
             ],
-            "index1": "-32 +/- 322",
-            "index2": "4.02 +/- 356",
-            "amplitude": "4.6e-11 +/- 5.58e-13",
-            "ebreak": "1.26 +/- 3.08e+03",
+            "index1": "-2.32 +/- 0.261",
+            "index2": "3.96 +/- 0.129",
+            "amplitude": "2.27e-11 +/- 1.16e-12",
+            "ebreak": "1.52 +/- 0.025",
             "lon_0": "79.6 +/- 0",
             "lat_0": "0.962 +/- 0",
-            "r_0": "2.89 +/- 633",
+            "r_0": "2.86 +/- 0.0293",
             "e": "0.01 +/- 0",
             "phi": "0 +/- 0",
             "edge_width": "0.1 +/- 0"
