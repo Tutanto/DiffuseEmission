@@ -11,7 +11,7 @@ from modules.variables import *
 # Define the name of the dataset file to be used for the fit
 diffuse = 'no_diffuse'
 file_name = 'all_IDs'
-e_min = 1
+e_min = 0.7
 e_max = 100
 bin = 20
 binsz = 0.05
@@ -75,11 +75,15 @@ for path in paths:
         # If the fit was done using the Minuit backend, save the Minuit results to a JSON file
         if fit.backend == "minuit":
             # Create an instance of MinuitResultWriter to handle the results
+            if path.with_suffix('').name == '00_nullhypothesis':
+                model_name = None
+            else:
+                model_name = ['cygnus_diffuse']
             stored_results = MinuitResultWriter(
                 dataset,
                 dataset_name,
                 filename,
-                ["cygnus_diffuse"],
+                model_name,
                 result_fit
             )
 

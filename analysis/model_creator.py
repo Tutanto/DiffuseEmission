@@ -13,11 +13,18 @@ from gammapy.modeling.models import (
 )
 from modules.variables import *
 
+diffuse = False
+
 original_model_path = dc_folder / 'skymodel' / 'global_skymodel_v1.0.yaml'
 original_model = Models.read(original_model_path)
 
+if not diffuse:
+    original_model.remove('diffuse')
+    folder_name = 'no_diffuse'
+elif diffuse:
+    folder_name = 'diffuse'
+
 original_model.remove('fermi bubble')
-original_model.remove('diffuse')
 original_model.freeze('spatial')
 original_model.freeze('spectral')
 
@@ -26,6 +33,9 @@ for model in original_model:
             model.spectral_model.amplitude.frozen = False
         else:
             model.spectral_model.norm.frozen = False
+
+path_to_original_model = path_to_models / folder_name / '00_nullhypothesis.yaml'
+original_model.write(path_to_original_model, overwrite=True)
 
 disk = DiskSpatialModel(
     lon_0=79.6188337 * u.deg,
@@ -69,10 +79,11 @@ cut = ExpCutoffPowerLawSpectralModel(
 )
 
 center_position = ['center_fixed', 'center_free']
-spectral_models = [pwl, brk, cut, log]
+spectral_models = [pwl, cut, log, brk]
 spatial_models = [disk, gaussian]
 
 for i, (position, spectral, spatial) in enumerate(itertools.product(center_position, spectral_models, spatial_models)):
+    j = i+1
     diffuse = SkyModel(spectral_model=spectral, spatial_model=spatial, name="cygnus_diffuse")
 
     models_diffuse = original_model.copy()
@@ -96,8 +107,5 @@ for i, (position, spectral, spatial) in enumerate(itertools.product(center_posit
     trimmed_string_spec = models_diffuse[0].spectral_model.tag[1]
     trimmed_string_spat = models_diffuse[0].spatial_model.tag[1]
 
-    path_to_model = path_to_models / 'no_diffuse' / f'{i:02d}_{trimmed_string_spec}_{trimmed_string_spat}_{position}.yaml'
+    path_to_model = path_to_models / folder_name / f'{j:02d}_{trimmed_string_spec}_{trimmed_string_spat}_{position}.yaml'
     models_diffuse.write(path_to_model, overwrite=True)
-
-path_to_original_model = path_to_models / 'no_diffuse' / f'{i+1:02d}_nullhypothesis.yaml'
-original_model.write(path_to_original_model, overwrite=True)
