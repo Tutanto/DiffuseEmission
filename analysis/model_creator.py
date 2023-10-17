@@ -98,3 +98,6 @@ for i, (position, spectral, spatial) in enumerate(itertools.product(center_posit
 
     path_to_model = path_to_models / 'no_diffuse' / f'{i:02d}_{trimmed_string_spec}_{trimmed_string_spat}_{position}.yaml'
     models_diffuse.write(path_to_model, overwrite=True)
+
+path_to_original_model = path_to_models / 'no_diffuse' / f'{i+1:02d}_nullhypothesis.yaml'
+original_model.write(path_to_original_model, overwrite=True)
