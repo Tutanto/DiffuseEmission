@@ -1,0 +1,25 @@
+{
+    "06_lp_gauss_center_fixed_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "LogParabolaSpectralModel",
+                "GaussianSpatialModel",
+                "dataset_all_IDs_ene_1_100_bin_20_binsz_0.02.fits.gz"
+            ],
+            "result": [
+                false,
+                "Optimization terminated successfully.",
+                9257736.057271345
+            ],
+            "amplitude": "3.34e-11 +/- 1.18e-12",
+            "reference": "1 +/- 0",
+            "alpha": "2 +/- 0.000225",
+            "beta": "0.332 +/- 0.0207",
+            "lon_0": "79.6 +/- 0",
+            "lat_0": "0.962 +/- 0",
+            "sigma": "1.85 +/- 0.0168",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0"
+        }
+    }
+}
