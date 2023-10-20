@@ -13,7 +13,7 @@ from gammapy.modeling.models import (
 )
 from modules.variables import *
 
-diffuse = False
+diffuse = True
 
 original_model_path = dc_folder / 'skymodel' / 'global_skymodel_v1.0.yaml'
 original_model = Models.read(original_model_path)
@@ -40,7 +40,7 @@ original_model.write(path_to_original_model, overwrite=True)
 disk = DiskSpatialModel(
     lon_0=79.6188337 * u.deg,
     lat_0=0.962326 * u.deg,
-    r_0="1 deg",
+    r_0="3 deg",
     e=0.01,
     phi=0 * u.deg,
     edge_width=0.1,
@@ -55,7 +55,7 @@ gaussian = GaussianSpatialModel(
     frame="galactic",
 )
 pwl = PowerLawSpectralModel(
-        index=1.5,
+        index=2.5,
         amplitude="1e-11 TeV-1 cm-2 s-1",
         reference=1 * u.TeV,
     )

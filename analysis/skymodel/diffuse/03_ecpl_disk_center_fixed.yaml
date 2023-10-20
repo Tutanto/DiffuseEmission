@@ -30,7 +30,7 @@ components:
             unit: deg
             frozen: true
         -   name: r_0
-            value: 1.0
+            value: 3.0
             unit: deg
             min: 0.05
             max: 4.0
