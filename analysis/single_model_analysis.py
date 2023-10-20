@@ -15,8 +15,8 @@ from modules.variables import *
 # Define the name of the dataset file to be used for the fit
 diffuse = 'no_diffuse'
 file_name = 'all_IDs'
-strategy = 0
-tol = 0.1
+strategy = 2
+tol = 0.01
 e_min = 0.7
 e_max = 100
 bin = 20
@@ -36,7 +36,7 @@ saved_jsons = path_to_results / 'single_model' / f'strategy_{strategy}' / f'tol_
 saved_models.mkdir(parents=True, exist_ok=True)
 saved_jsons.mkdir(parents=True, exist_ok=True)
 
-path = list(models.rglob("04*.yaml"))
+path = list(models.rglob("03*.yaml"))
 
 models_fit = Models.read(path[0])
 #models_fit["cygnus_diffuse"].freeze("spatial")
