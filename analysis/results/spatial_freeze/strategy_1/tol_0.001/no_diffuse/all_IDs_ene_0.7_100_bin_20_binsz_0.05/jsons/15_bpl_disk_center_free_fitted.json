@@ -1,0 +1,26 @@
+{
+    "15_bpl_disk_center_free_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "BrokenPowerLawSpectralModel",
+                "DiskSpatialModel",
+                "dataset_all_IDs_ene_0.7_100_bin_20_binsz_0.05.fits.gz"
+            ],
+            "result": [
+                false,
+                "Optimization terminated successfully.",
+                -6882033.617158946
+            ],
+            "index1": "2 +/- 7.94e-05",
+            "index2": "3 +/- 8.13e-05",
+            "amplitude": "3.49e-12 +/- 1.23e-12",
+            "ebreak": "2.45 +/- 0.354",
+            "lon_0": "79.6 +/- 0",
+            "lat_0": "0.962 +/- 0",
+            "r_0": "3 +/- 0",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0",
+            "edge_width": "0.1 +/- 0"
+        }
+    }
+}

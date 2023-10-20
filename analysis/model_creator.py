@@ -97,6 +97,16 @@ for i, (position, spectral, spatial) in enumerate(itertools.product(center_posit
     if models_diffuse[0].spatial_model.tag[0] == gaussian.tag[0]:
         models_diffuse[0].parameters["sigma"].max = 3
         models_diffuse[0].parameters["sigma"].min = 0.1
+    if models_diffuse[0].spectral_model.tag[0] == brk.tag[0]:
+        models_diffuse[0].parameters["index1"].max = 3
+        models_diffuse[0].parameters["index1"].min = 2
+        models_diffuse[0].parameters["index2"].max = 3
+        models_diffuse[0].parameters["index2"].min = 2.1
+    if models_diffuse[0].spectral_model.tag[0] == cut.tag[0]:
+        models_diffuse[0].parameters["lambda_"].max = 0.1
+        models_diffuse[0].parameters["lambda_"].min = 0.001
+        models_diffuse[0].parameters["index"].max = 3
+        models_diffuse[0].parameters["index"].min = 2.1
     if models_diffuse[0].spectral_model.tag[0] == log.tag[0]:
         models_diffuse[0].parameters["alpha"].max = 3
         models_diffuse[0].parameters["alpha"].min = 2

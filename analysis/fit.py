@@ -11,7 +11,7 @@ from modules.variables import *
 # Define the name of the dataset file to be used for the fit
 diffuse = 'no_diffuse'
 file_name = 'all_IDs'
-strategy = 0
+strategy = 1
 tol = 0.1
 e_min = 0.7
 e_max = 100
@@ -40,6 +40,9 @@ for path in paths:
     models_fit = Models.read(path)
     bkg_model = FoVBackgroundModel(dataset_name=dataset.name)
     models_fit.insert(-1, bkg_model)
+#    if path.with_suffix('').name != '00_nullhypothesis':
+#        models_fit["cygnus_diffuse"].freeze("spatial")
+
     dataset.models = models_fit
 
     # Define the names of the output files for the fit results

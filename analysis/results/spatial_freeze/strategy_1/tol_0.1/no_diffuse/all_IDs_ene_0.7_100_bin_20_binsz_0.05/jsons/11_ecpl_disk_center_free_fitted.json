@@ -1,0 +1,27 @@
+{
+    "11_ecpl_disk_center_free_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "ExpCutoffPowerLawSpectralModel",
+                "DiskSpatialModel",
+                "dataset_all_IDs_ene_0.7_100_bin_20_binsz_0.05.fits.gz"
+            ],
+            "result": [
+                true,
+                "Optimization terminated successfully.",
+                -6881966.343676902
+            ],
+            "index": "2.1 +/- 2.83e-05",
+            "amplitude": "2.36e-11 +/- 6.75e-13",
+            "reference": "1 +/- 0",
+            "lambda_": "0.1 +/- 4.98e-06",
+            "alpha": "1 +/- 0",
+            "lon_0": "79.6 +/- 0",
+            "lat_0": "0.962 +/- 0",
+            "r_0": "3 +/- 0",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0",
+            "edge_width": "0.1 +/- 0"
+        }
+    }
+}
