@@ -16,11 +16,11 @@ from modules.variables import *
 diffuse = 'no_diffuse'
 file_name = 'all_IDs'
 strategy = 1
-tol = 0.1
-e_min = 0.7
+tol = 0.001
+e_min = 1
 e_max = 100
 bin = 20
-binsz = 0.05
+binsz = 0.02
 dataset_name = f"dataset_{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}.fits.gz"
 
 # Set the path to the dataset file
@@ -104,21 +104,22 @@ for path in paths:
             # to print the Minuit results in a readable format.
             # stored_results.pretty_print_result()
         
-        # Compute fluxpoints
-        sed_points = np.logspace(0, 2, num=11) * u.TeV
-        fpe = FluxPointsEstimator(energy_edges=sed_points, source="cygnus_diffuse", selection_optional=["ul"])
-        # Log information about the dataset and model used for the SED calculation
-        logger.debug(f"Spectrum extraction using dataset: {dataset.name}")
-        logger.debug(f"Dataset geom: {dataset.geoms['geom']}")
-        logger.debug(f"Dataset energy axis: {dataset.geoms['geom'].axes['energy']}")
-        logger.debug(f"Computing SED from {sed_points.min} to {sed_points.max()} TeV, with {len(sed_points)} bins")
+        if path.with_suffix('').name != '00_nullhypothesis':
+            # Compute fluxpoints
+            sed_points = np.logspace(0, 2, num=11) * u.TeV
+            fpe = FluxPointsEstimator(energy_edges=sed_points, source="cygnus_diffuse", selection_optional=["ul"])
+            # Log information about the dataset and model used for the SED calculation
+            logger.debug(f"Spectrum extraction using dataset: {dataset.name}")
+            logger.debug(f"Dataset geom: {dataset.geoms['geom']}")
+            logger.debug(f"Dataset energy axis: {dataset.geoms['geom'].axes['energy']}")
+            logger.debug(f"Computing SED from {sed_points.min} to {sed_points.max()} TeV, with {len(sed_points)} bins")
 
-        flux_points = fpe.run(datasets=[dataset])
+            flux_points = fpe.run(datasets=[dataset])
         
-        # Save fluxpoints
-        path_to_result_fluxpoints = path_to_fluxdatapoints / 'single_model' / f'strategy_{strategy}' / f'tol_{tol}' / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}"
-        path_to_result_fluxpoints.mkdir(parents=True, exist_ok=True)
-        saved_fluxpoints = path_to_result_fluxpoints / f'{filename}.fits'
-        flux_points.write(filename=saved_fluxpoints, overwrite=True)
-        # Log information about the location of the saved SED file
-        logger.info(f"Spectrum saved in: {saved_fluxpoints}")
+            # Save fluxpoints
+            path_to_result_fluxpoints = path_to_fluxdatapoints / 'single_model' / f'strategy_{strategy}' / f'tol_{tol}' / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}"
+            path_to_result_fluxpoints.mkdir(parents=True, exist_ok=True)
+            saved_fluxpoints = path_to_result_fluxpoints / f'{filename}.fits'
+            flux_points.write(filename=saved_fluxpoints, overwrite=True)
+            # Log information about the location of the saved SED file
+            logger.info(f"Spectrum saved in: {saved_fluxpoints}")
