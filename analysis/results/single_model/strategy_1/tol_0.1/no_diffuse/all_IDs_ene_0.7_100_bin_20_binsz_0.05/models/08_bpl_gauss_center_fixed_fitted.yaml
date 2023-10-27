@@ -5,19 +5,23 @@ components:
         type: BrokenPowerLawSpectralModel
         parameters:
         -   name: index1
-            value: 2.5
+            value: 2.000000093041839
+            error: 4.4613756395352434e-05
             min: 2.0
             max: 3.0
         -   name: index2
-            value: 2.7
+            value: 2.999999141719251
+            error: 0.000248950810591093
             min: 2.1
             max: 3.0
         -   name: amplitude
-            value: 1.0e-13
+            value: 4.702954942081038e-12
             unit: cm-2 s-1 TeV-1
+            error: 1.3362822550439431e-12
         -   name: ebreak
-            value: 10.0
+            value: 2.4676442866591857
             unit: TeV
+            error: 0.289543242203048
     spatial:
         type: GaussianSpatialModel
         frame: galactic
@@ -31,8 +35,9 @@ components:
             unit: deg
             frozen: true
         -   name: sigma
-            value: 2.1
+            value: 1.9052091573999488
             unit: deg
+            error: 0.02766296454519131
             min: 0.1
             max: 3.0
         -   name: e
@@ -46,8 +51,9 @@ components:
         type: LogParabolaSpectralModel
         parameters:
         -   name: amplitude
-            value: 3.0e-15
+            value: 4.245508697138777e-15
             unit: cm-2 s-1 TeV-1
+            error: 1.2076030447745098e-15
         -   name: reference
             value: 7.0
             unit: TeV
@@ -84,8 +90,9 @@ components:
         type: LogParabolaSpectralModel
         parameters:
         -   name: amplitude
-            value: 5.0e-15
+            value: 5.584917286817909e-15
             unit: cm-2 s-1 TeV-1
+            error: 1.3030418322634861e-15
         -   name: reference
             value: 7.0
             unit: TeV
@@ -108,7 +115,7 @@ components:
             unit: deg
             frozen: true
         -   name: sigma
-            value: 0.22
+            value: 0.21999999999999997
             unit: deg
             frozen: true
         -   name: e
@@ -125,8 +132,9 @@ components:
             value: 1.5
             frozen: true
         -   name: amplitude
-            value: 2.0e-13
+            value: 1.934690900696414e-13
             unit: cm-2 s-1 TeV-1
+            error: 1.281813570535357e-14
         -   name: reference
             value: 1.0
             unit: TeV
@@ -140,7 +148,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2020+368.fits
+        filename: /home/antonio/Data/ASTRI/DC-GCygni/skymodel/VER_J2020+368.fits
         normalize: true
         unit: 1 / sr
 -   name: VER J2018+367
@@ -152,8 +160,9 @@ components:
             value: 2.0
             frozen: true
         -   name: amplitude
-            value: 3.8e-13
+            value: 3.850321405343836e-13
             unit: cm-2 s-1 TeV-1
+            error: 2.9839474665733484e-14
         -   name: reference
             value: 1.0
             unit: TeV
@@ -167,7 +176,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2018+367.fits
+        filename: /home/antonio/Data/ASTRI/DC-GCygni/skymodel/VER_J2018+367.fits
         normalize: true
         unit: 1 / sr
 -   name: VER J2016+371
@@ -179,8 +188,9 @@ components:
             value: 2.3
             frozen: true
         -   name: amplitude
-            value: 3.0e-13
+            value: 2.7706698103954986e-13
             unit: cm-2 s-1 TeV-1
+            error: 2.831672742719032e-14
         -   name: reference
             value: 1.0
             unit: TeV
@@ -194,7 +204,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2016+371.fits
+        filename: /home/antonio/Data/ASTRI/DC-GCygni/skymodel/VER_J2016+371.fits
         normalize: true
         unit: 1 / sr
 -   name: LHAASO J2032+4102
@@ -206,8 +216,9 @@ components:
             value: 2.0
             frozen: true
         -   name: amplitude
-            value: 1.24e-13
+            value: 1.1454483174957877e-13
             unit: cm-2 s-1 TeV-1
+            error: 8.751027448910186e-15
         -   name: reference
             value: 2.3
             unit: TeV
@@ -244,8 +255,9 @@ components:
         type: LogParabolaSpectralModel
         parameters:
         -   name: amplitude
-            value: 6.0e-16
+            value: 6.3846127833328195e-16
             unit: cm-2 s-1 TeV-1
+            error: 5.22691633247752e-17
         -   name: reference
             value: 40.0
             unit: TeV
@@ -285,7 +297,6 @@ components:
         parameters:
         -   name: norm
             value: 1.0
-            frozen: false
         energy:
             data:
             - 9.999999999999996e-06
@@ -482,7 +493,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2019+407.fits
+        filename: /home/antonio/Data/ASTRI/DC-GCygni/skymodel/VER_J2019+407.fits
         normalize: true
         unit: 1 / sr
 -   name: 3HWC J2043+443
@@ -492,7 +503,6 @@ components:
         parameters:
         -   name: norm
             value: 1.0
-            frozen: false
         energy:
             data:
             - 0.1
@@ -604,7 +614,7 @@ components:
         frame: galactic
         parameters:
         -   name: lon_0
-            value: 83.7444197246352
+            value: 83.74441972463518
             unit: deg
             frozen: true
         -   name: lat_0
@@ -629,7 +639,6 @@ components:
         parameters:
         -   name: norm
             value: 1.0
-            frozen: false
         energy:
             data:
             - 0.1
@@ -755,7 +764,6 @@ components:
         parameters:
         -   name: norm
             value: 1.0
-            frozen: false
         energy:
             data:
             - 0.1
@@ -881,7 +889,6 @@ components:
         parameters:
         -   name: norm
             value: 1.0
-            frozen: false
         energy:
             data:
             - 0.1
@@ -1007,7 +1014,6 @@ components:
         parameters:
         -   name: norm
             value: 1.0
-            frozen: false
         energy:
             data:
             - 0.1
@@ -1144,7 +1150,6 @@ components:
         parameters:
         -   name: norm
             value: 1.0
-            frozen: false
         energy:
             data:
             - 0.1
@@ -1270,7 +1275,6 @@ components:
         parameters:
         -   name: norm
             value: 1.0
-            frozen: false
         energy:
             data:
             - 0.1
@@ -1407,7 +1411,6 @@ components:
         parameters:
         -   name: norm
             value: 1.0
-            frozen: false
         energy:
             data:
             - 0.1
@@ -1528,15 +1531,16 @@ components:
             frozen: true
 -   type: FoVBackgroundModel
     datasets_names:
-    - my-dataset
+    - dc_cygnus-stacked
     spectral:
         type: PowerLawNormSpectralModel
         parameters:
         -   name: norm
-            value: 1.0
+            value: 0.9870391667420333
+            error: 0.0005539957405481175
         -   name: tilt
             value: 0.0
         -   name: reference
             value: 1.0
             unit: TeV
-covariance: 08_bpl_gauss_center_fixed_covariance.dat
+covariance: 08_bpl_gauss_center_fixed_fitted_covariance.dat
