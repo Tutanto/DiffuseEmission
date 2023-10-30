@@ -2,18 +2,22 @@ components:
 -   name: cygnus_diffuse
     type: SkyModel
     spectral:
-        type: BrokenPowerLawSpectralModel
+        type: LogParabolaSpectralModel
         parameters:
-        -   name: index1
-            value: 2.5
-        -   name: index2
-            value: 2.7
         -   name: amplitude
-            value: 1.0e-13
+            value: 4.0e-11
             unit: cm-2 s-1 TeV-1
-        -   name: ebreak
-            value: 10.0
+        -   name: reference
+            value: 1.0
             unit: TeV
+        -   name: alpha
+            value: 2.5
+            min: 2.0
+            max: 3.0
+        -   name: beta
+            value: 0.07
+            min: 0.01
+            max: 1.0
     spatial:
         type: GaussianSpatialModel
         frame: galactic
@@ -1535,4 +1539,4 @@ components:
         -   name: reference
             value: 1.0
             unit: TeV
-covariance: 08_bpl_gauss_center_fixed_covariance.dat
+covariance: 14_lp_gauss_center_free_covariance.dat

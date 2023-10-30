@@ -13,7 +13,7 @@ from gammapy.modeling.models import (
 )
 from modules.variables import *
 
-diffuse = True
+diffuse = False
 
 original_model_path = dc_folder / 'skymodel' / 'global_skymodel_v1.0.yaml'
 original_model = Models.read(original_model_path)
@@ -97,6 +97,7 @@ for i, (position, spectral, spatial) in enumerate(itertools.product(center_posit
     if models_diffuse[0].spatial_model.tag[0] == gaussian.tag[0]:
         models_diffuse[0].parameters["sigma"].max = 3
         models_diffuse[0].parameters["sigma"].min = 0.1
+        '''
     if models_diffuse[0].spectral_model.tag[0] == brk.tag[0]:
         models_diffuse[0].parameters["index1"].max = 3
         models_diffuse[0].parameters["index1"].min = 2
@@ -112,6 +113,7 @@ for i, (position, spectral, spatial) in enumerate(itertools.product(center_posit
         models_diffuse[0].parameters["alpha"].min = 2
         models_diffuse[0].parameters["beta"].max = 1
         models_diffuse[0].parameters["beta"].min = 0.01
+        '''
     print(models_diffuse)
 
     trimmed_string_spec = models_diffuse[0].spectral_model.tag[1]

@@ -2,18 +2,22 @@ components:
 -   name: cygnus_diffuse
     type: SkyModel
     spectral:
-        type: BrokenPowerLawSpectralModel
+        type: LogParabolaSpectralModel
         parameters:
-        -   name: index1
-            value: 2.5
-        -   name: index2
-            value: 2.7
         -   name: amplitude
-            value: 1.0e-13
+            value: 4.0e-11
             unit: cm-2 s-1 TeV-1
-        -   name: ebreak
-            value: 10.0
+        -   name: reference
+            value: 1.0
             unit: TeV
+        -   name: alpha
+            value: 2.5
+            min: 2.0
+            max: 3.0
+        -   name: beta
+            value: 0.07
+            min: 0.01
+            max: 1.0
     spatial:
         type: GaussianSpatialModel
         frame: galactic
@@ -136,7 +140,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: /home/tutone/Data/ASTRI/DC-GCygni/skymodel/VER_J2020+368.fits
+        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2020+368.fits
         normalize: true
         unit: 1 / sr
 -   name: VER J2018+367
@@ -163,7 +167,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: /home/tutone/Data/ASTRI/DC-GCygni/skymodel/VER_J2018+367.fits
+        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2018+367.fits
         normalize: true
         unit: 1 / sr
 -   name: VER J2016+371
@@ -190,7 +194,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: /home/tutone/Data/ASTRI/DC-GCygni/skymodel/VER_J2016+371.fits
+        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2016+371.fits
         normalize: true
         unit: 1 / sr
 -   name: LHAASO J2032+4102
@@ -478,7 +482,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: /home/tutone/Data/ASTRI/DC-GCygni/skymodel/VER_J2019+407.fits
+        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2019+407.fits
         normalize: true
         unit: 1 / sr
 -   name: 3HWC J2043+443
@@ -1535,4 +1539,4 @@ components:
         -   name: reference
             value: 1.0
             unit: TeV
-covariance: 08_bpl_gauss_center_fixed_covariance.dat
+covariance: 06_lp_gauss_center_fixed_covariance.dat

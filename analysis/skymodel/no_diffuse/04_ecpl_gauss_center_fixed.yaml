@@ -6,8 +6,6 @@ components:
         parameters:
         -   name: index
             value: 2.5
-            min: 2.1
-            max: 3.0
         -   name: amplitude
             value: 3.0e-11
             unit: cm-2 s-1 TeV-1
@@ -17,8 +15,6 @@ components:
         -   name: lambda_
             value: 0.01
             unit: TeV-1
-            min: 0.001
-            max: 0.1
         -   name: alpha
             value: 1.0
     spatial:
@@ -143,7 +139,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2020+368.fits
+        filename: /home/tutone/Data/ASTRI/DC-GCygni/skymodel/VER_J2020+368.fits
         normalize: true
         unit: 1 / sr
 -   name: VER J2018+367
@@ -170,7 +166,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2018+367.fits
+        filename: /home/tutone/Data/ASTRI/DC-GCygni/skymodel/VER_J2018+367.fits
         normalize: true
         unit: 1 / sr
 -   name: VER J2016+371
@@ -197,7 +193,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2016+371.fits
+        filename: /home/tutone/Data/ASTRI/DC-GCygni/skymodel/VER_J2016+371.fits
         normalize: true
         unit: 1 / sr
 -   name: LHAASO J2032+4102
@@ -485,7 +481,7 @@ components:
         type: TemplateSpatialModel
         frame: galactic
         parameters: []
-        filename: $HOME/Data/ASTRI/DC-GCygni/skymodel/VER_J2019+407.fits
+        filename: /home/tutone/Data/ASTRI/DC-GCygni/skymodel/VER_J2019+407.fits
         normalize: true
         unit: 1 / sr
 -   name: 3HWC J2043+443
