@@ -44,10 +44,16 @@ for path in paths:
     models_fit = Models.read(path)
     bkg_model = FoVBackgroundModel(dataset_name=dataset.name)
     models_fit.insert(-1, bkg_model)
-#    if path.with_suffix('').name != '00_nullhypothesis':
-#        models_fit["cygnus_diffuse"].freeze("spatial")
 
     dataset.models = models_fit
+    
+    # Define the name of the source
+    if path.with_suffix('').name == 'nullhypothesis':
+        model_name = None
+    elif path.with_suffix('').name == '00_template':
+        model_name = ['fermi bubble']
+    else:
+        model_name = ['cygnus_diffuse']
 
     # Define the names of the output files for the fit results
     filename = f"{path.with_suffix('').name}_fitted"
@@ -85,10 +91,6 @@ for path in paths:
         # If the fit was done using the Minuit backend, save the Minuit results to a JSON file
         if fit.backend == "minuit":
             # Create an instance of MinuitResultWriter to handle the results
-            if path.with_suffix('').name == '00_nullhypothesis':
-                model_name = None
-            else:
-                model_name = ['cygnus_diffuse']
             stored_results = MinuitResultWriter(
                 dataset,
                 dataset_name,
@@ -107,7 +109,7 @@ for path in paths:
         if path.with_suffix('').name != '00_nullhypothesis':
             # Compute fluxpoints
             sed_points = np.logspace(0, 2, num=11) * u.TeV
-            fpe = FluxPointsEstimator(energy_edges=sed_points, source="cygnus_diffuse", selection_optional=["ul"])
+            fpe = FluxPointsEstimator(energy_edges=sed_points, source=model_name[0], selection_optional=["ul"])
             # Log information about the dataset and model used for the SED calculation
             logger.debug(f"Spectrum extraction using dataset: {dataset.name}")
             logger.debug(f"Dataset geom: {dataset.geoms['geom']}")

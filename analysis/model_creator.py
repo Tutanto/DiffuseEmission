@@ -18,13 +18,6 @@ diffuse = False
 original_model_path = dc_folder / 'skymodel' / 'global_skymodel_v1.0.yaml'
 original_model = Models.read(original_model_path)
 
-if not diffuse:
-    original_model.remove('diffuse')
-    folder_name = 'no_diffuse'
-elif diffuse:
-    folder_name = 'diffuse'
-
-original_model.remove('fermi bubble')
 original_model.freeze('spatial')
 original_model.freeze('spectral')
 
@@ -34,7 +27,20 @@ for model in original_model:
         else:
             model.spectral_model.norm.frozen = False
 
-path_to_original_model = path_to_models / folder_name / '00_nullhypothesis.yaml'
+
+if not diffuse:
+    original_model.remove('diffuse')
+    folder_name = 'no_diffuse'
+elif diffuse:
+    folder_name = 'diffuse'
+
+
+path_to_original_model = path_to_models / folder_name / '00_template.yaml'
+original_model.write(path_to_original_model, overwrite=True)
+original_model.remove('fermi bubble')
+
+
+path_to_original_model = path_to_models / folder_name / 'nullhypothesis.yaml'
 original_model.write(path_to_original_model, overwrite=True)
 
 disk = DiskSpatialModel(
@@ -96,8 +102,7 @@ for i, (position, spectral, spatial) in enumerate(itertools.product(center_posit
         models_diffuse[0].parameters["r_0"].min = 0.05
     if models_diffuse[0].spatial_model.tag[0] == gaussian.tag[0]:
         models_diffuse[0].parameters["sigma"].max = 3
-        models_diffuse[0].parameters["sigma"].min = 0.1
-        '''
+        models_diffuse[0].parameters["sigma"].min = 0.1        
     if models_diffuse[0].spectral_model.tag[0] == brk.tag[0]:
         models_diffuse[0].parameters["index1"].max = 3
         models_diffuse[0].parameters["index1"].min = 2
@@ -113,7 +118,7 @@ for i, (position, spectral, spatial) in enumerate(itertools.product(center_posit
         models_diffuse[0].parameters["alpha"].min = 2
         models_diffuse[0].parameters["beta"].max = 1
         models_diffuse[0].parameters["beta"].min = 0.01
-        '''
+        
     print(models_diffuse)
 
     trimmed_string_spec = models_diffuse[0].spectral_model.tag[1]
