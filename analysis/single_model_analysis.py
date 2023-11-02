@@ -16,11 +16,11 @@ from modules.variables import *
 diffuse = 'no_diffuse'
 file_name = 'all_IDs'
 strategy = 1
-tol = 0.01
+tol = 0.1
 e_min = 0.7
 e_max = 100
 bin = 20
-binsz = 0.05
+binsz = 0.02
 dataset_name = f"dataset_{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}.fits.gz"
 
 # Set the path to the dataset file
