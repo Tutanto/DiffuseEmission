@@ -16,7 +16,7 @@ from modules.variables import *
 diffuse = 'no_diffuse'
 file_name = 'all_IDs'
 strategy = 1
-tol = 0.01
+tol = 0.001
 e_min = 0.7
 e_max = 100
 bin = 20
@@ -31,8 +31,8 @@ dataset = MapDataset.read(filename=path_to_dataset)
 
 # Define the filename and path for the fitted model to be saved
 models = path_to_models / diffuse
-saved_models = path_to_results_free / 'multi_models' / f'strategy_{strategy}' / f'tol_{tol}' / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "models"
-saved_jsons = path_to_results_free / 'multi_models' / f'strategy_{strategy}' / f'tol_{tol}' / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "jsons"
+saved_models = path_to_results / 'multi_models' / f'strategy_{strategy}' / f'tol_{tol}' / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "models"
+saved_jsons = path_to_results / 'multi_models' / f'strategy_{strategy}' / f'tol_{tol}' / diffuse / f"{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}" / "jsons"
 
 saved_models.mkdir(parents=True, exist_ok=True)
 saved_jsons.mkdir(parents=True, exist_ok=True)
