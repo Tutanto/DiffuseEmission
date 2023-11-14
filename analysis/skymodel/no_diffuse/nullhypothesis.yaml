@@ -1,50 +1,4 @@
 components:
--   name: cygnus_diffuse
-    type: SkyModel
-    spectral:
-        type: ExpCutoffPowerLawSpectralModel
-        parameters:
-        -   name: index
-            value: 2.5
-            min: 2.1
-            max: 3.0
-        -   name: amplitude
-            value: 3.0e-11
-            unit: cm-2 s-1 TeV-1
-        -   name: reference
-            value: 1.0
-            unit: TeV
-        -   name: lambda_
-            value: 0.01
-            unit: TeV-1
-            min: 0.001
-            max: 0.1
-        -   name: alpha
-            value: 1.0
-    spatial:
-        type: DiskSpatialModel
-        frame: galactic
-        parameters:
-        -   name: lon_0
-            value: 79.6188337
-            unit: deg
-            frozen: true
-        -   name: lat_0
-            value: 0.962326
-            unit: deg
-            frozen: true
-        -   name: r_0
-            value: 3.0
-            unit: deg
-            min: 0.05
-            max: 4.0
-        -   name: e
-            value: 0.01
-        -   name: phi
-            value: 0.0
-            unit: deg
-        -   name: edge_width
-            value: 0.1
 -   name: PSR J1958+2846
     type: SkyModel
     spectral:
@@ -1544,4 +1498,4 @@ components:
         -   name: reference
             value: 1.0
             unit: TeV
-covariance: 11_ecpl_disk_center_free_covariance.dat
+covariance: nullhypothesis_covariance.dat
