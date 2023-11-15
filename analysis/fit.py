@@ -16,7 +16,7 @@ from modules.variables import *
 diffuse = 'diffuse'
 file_name = 'all_IDs'
 strategy = 1
-tol = 0.1
+tol = 0.01
 e_min = 1
 e_max = 200
 bin = 20
