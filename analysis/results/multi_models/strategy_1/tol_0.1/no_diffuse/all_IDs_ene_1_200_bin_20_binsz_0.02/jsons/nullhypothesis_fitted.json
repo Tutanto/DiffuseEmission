@@ -1,0 +1,16 @@
+{
+    "nullhypothesis_fitted": {
+        "Nullhypothesis": {
+            "models": [
+                "Nullhypothesis",
+                "Nullhypothesis",
+                "dataset_all_IDs_ene_1_200_bin_20_binsz_0.02.fits.gz"
+            ],
+            "result": [
+                true,
+                "Optimization terminated successfully.",
+                8747457.886834785
+            ]
+        }
+    }
+}

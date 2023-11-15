@@ -13,12 +13,12 @@ from GPyUtils.write_minuit_result import MinuitResultWriter
 from modules.variables import *
 
 # Define the name of the dataset file to be used for the fit
-diffuse = 'no_diffuse'
+diffuse = 'diffuse'
 file_name = 'all_IDs'
 strategy = 1
-tol = 0.001
-e_min = 0.7
-e_max = 100
+tol = 0.1
+e_min = 1
+e_max = 200
 bin = 20
 binsz = 0.02
 dataset_name = f"dataset_{file_name}_ene_{e_min}_{e_max}_bin_{bin}_binsz_{binsz}.fits.gz"

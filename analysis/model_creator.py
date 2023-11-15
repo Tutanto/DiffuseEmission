@@ -13,7 +13,7 @@ from gammapy.modeling.models import (
 )
 from modules.variables import *
 
-diffuse = False
+diffuse = True
 
 original_model_path = dc_folder / 'skymodel' / 'global_skymodel_v1.0.yaml'
 original_model = Models.read(original_model_path)
