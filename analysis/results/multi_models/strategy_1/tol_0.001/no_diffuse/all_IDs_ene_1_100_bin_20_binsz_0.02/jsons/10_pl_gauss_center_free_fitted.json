@@ -1,0 +1,24 @@
+{
+    "10_pl_gauss_center_free_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "PowerLawSpectralModel",
+                "GaussianSpatialModel",
+                "dataset_all_IDs_ene_1_100_bin_20_binsz_0.02.fits.gz"
+            ],
+            "result": [
+                false,
+                "Optimization terminated successfully.",
+                9257906.567654932
+            ],
+            "index": "2.58 +/- 0.0204",
+            "amplitude": "3.36e-11 +/- 1.52e-12",
+            "reference": "1 +/- 0",
+            "lon_0": "79.6 +/- 0",
+            "lat_0": "0.962 +/- 0",
+            "sigma": "1.77 +/- 0.0282",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0"
+        }
+    }
+}
