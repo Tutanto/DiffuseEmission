@@ -1,0 +1,26 @@
+{
+    "12_ecpl_gauss_center_free_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "ExpCutoffPowerLawSpectralModel",
+                "GaussianSpatialModel",
+                "dataset_all_IDs_ene_1_20_bin_10_binsz_0.05.fits.gz"
+            ],
+            "result": [
+                false,
+                "Optimization terminated successfully.",
+                -3604397.8166861455
+            ],
+            "index": "2.17 +/- 0.0328",
+            "amplitude": "3.03e-11 +/- 1.66e-12",
+            "reference": "1 +/- 0",
+            "lambda_": "0.1 +/- 0.000116",
+            "alpha": "1 +/- 0",
+            "lon_0": "79.6 +/- 0",
+            "lat_0": "0.962 +/- 0",
+            "sigma": "1.75 +/- 0.0487",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0"
+        }
+    }
+}

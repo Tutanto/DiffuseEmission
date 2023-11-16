@@ -1,0 +1,26 @@
+{
+    "05_lp_disk_center_fixed_fitted": {
+        "cygnus_diffuse": {
+            "models": [
+                "LogParabolaSpectralModel",
+                "DiskSpatialModel",
+                "dataset_all_IDs_ene_1_20_bin_10_binsz_0.05.fits.gz"
+            ],
+            "result": [
+                true,
+                "Optimization terminated successfully.",
+                -3604418.8796071094
+            ],
+            "amplitude": "9.76e-12 +/- 7.17e-13",
+            "reference": "1 +/- 0",
+            "alpha": "2 +/- 0.000302",
+            "beta": "0.271 +/- 0.0452",
+            "lon_0": "79.6 +/- 0",
+            "lat_0": "0.962 +/- 0",
+            "r_0": "2.19 +/- 0.0297",
+            "e": "0.01 +/- 0",
+            "phi": "0 +/- 0",
+            "edge_width": "0.1 +/- 0"
+        }
+    }
+}
